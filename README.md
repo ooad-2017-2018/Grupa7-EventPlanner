@@ -44,17 +44,34 @@ Ukoliko neki objekat, izvođač ili slastičarna želi ponuditi svoje usluge na 
 
 Kada klijent selektuje stvari on od njih može odustati prije nego klikne dugme finalna kupovina i unese svoj broj kredite kartice tada mi naplaćujemo naše usluge i nakon toga nije moguć povrat novca čak iako se rezervacija otkaže. Način plaćanja je znači karticom i broj se unosi u polje predviđeno za to.
 
+## **Funkcionalnost**
+
+### Klijent
+ - Mogućnost odabira različitih vrsti proslava ili događaja
+ - Mogućnost lakšeg odabira odgovarajućih objekata i ostalih pogodnosti u skladu s odabranim eventom (npr. za proslavu dječijeg rođendana se neće nuditi noćni klubovi)
+ - Mogućnost izbora dostupnih objekata za željeni događaj
+ - Mogućnost rezervacije dosupnih objekata za željeni događaj
+ - Mogućnost izbora različitih načina sortiranja i filtriranja objekata (npr. po cijeni, blizini, veličini, uključenim dodacima itd.)
+ - Mogućnost odabira dodataka za željeni objekat (npr. izbor dodatnih pogodnosti ili odstranjivanje određenih koje dolaze u sklopu nekog objekta ukoliko korisnik iste smatra suvišnim)
+ - Mogućnost sigurnog i jednostavnog plaćanja uz ispostavljanje odgovarajuće potvrde (računa)
+ - Mogućnost otkazivanja rezervacije
+
+### Saradnik
+
 ## **Akteri**
 
 ### 1.Korisnik usluga(Klijent) 
 
-Korisnik usluga je osoba koja ima mogucnost da putem online sistema izabere i rezervise sve sto joj je potrebno za dogadjaj koji planira.
+Korisnik usluga je osoba koja ima mogućnost da putem online sistema izabere i rezerviše sve sto joj je potrebno za događaj koji planira.
 
 ### 2.Uposlenik
 
-Uposlenik je osoba koja radi neku od ponudjenih usluga za dogadjaje. Ovdje spadaju i vlasnici koji iznajmljuju svoje objekte kao i razni zabavljaci i oni koji su zaduzeni za estetske dodatke ili hranu i pice.
+Uposlenik je osoba koja radi neku od ponuđenih usluga za događaje. Ovdje spadaju i vlasnici koji iznajmljuju svoje objekte kao i razni zabavljači i oni koji su zaduženi za estetske dodatke ili hranu i piće.
 
 ### 3.Supervizor 
 
-Supervizor vrsi update ponudjenih usluga za odredjene datume, da bi klijent uvijek mogao birati samo ono sto mu je dostupno, nadgleda karticno placanje i prosiruje postojece ponudjene usluge dogovarajuci se s novim uposlenicima.
+Supervizor vrši update ponuđenih usluga za određene datume, da bi klijent uvijek mogao birati samo ono sto mu je dostupno, nadgleda kartično plaćanje i proširuje postojeće ponuđene usluge dogovarajući se s novim uposlenicima.
 
+### 4.Drugi tip aktera-kreditna kartica
+
+Komunikacija sa sistemom jer omogućava sve vrste plaćanja.
