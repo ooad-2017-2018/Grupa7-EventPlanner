@@ -4,9 +4,9 @@
 ## Naslov projekta: Event Planner
 
 - Članovi grupe:
-- 1. Amela Kurtić
-- 2. Ilma Lušija
-- 3. Amina Ovčina
+- 1.Amela Kurtić
+- 2.Ilma Lušija
+- 3.Amina Ovčina
 
 ## **Opis teme**
 
