@@ -46,15 +46,15 @@ Kada klijent selektuje stvari on od njih može odustati prije nego klikne dugme 
 
 ## **Akteri**
 
-###Korisnik usluga(Klijent) 
+### Korisnik usluga(Klijent) 
 
 Korisnik usluga je osoba koja ima mogucnost da putem online sistema izabere i rezervise sve sto joj je potrebno za dogadjaj koji planira.
 
-###Uposlenik
+### Uposlenik
 
 Uposlenik je osoba koja radi neku od ponudjenih usluga za dogadjaje. Ovdje spadaju i vlasnici koji iznajmljuju svoje objekte kao i razni zabavljaci i oni koji su zaduzeni za estetske dodatke ili hranu i pice.
 
-###Supervizor 
+### Supervizor 
 
 Supervizor vrsi update ponudjenih usluga za odredjene datume, da bi klijent uvijek mogao birati samo ono sto mu je dostupno, nadgleda karticno placanje i prosiruje postojece ponudjene usluge dogovarajuci se s novim uposlenicima.
 
