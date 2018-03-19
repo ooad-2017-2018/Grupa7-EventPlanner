@@ -38,7 +38,23 @@ Ukoliko usluga nije dostupna, saradnik će biti označen kao nedostupan a klijen
 
 ### 4.Proces: Saradnik na sistemu
 
+Ukoliko neki objekat, izvođač ili slastičarna želi ponuditi svoje usluge na sistemu potrebno je da unese sve podatke vezane za uslugu koju pruža to uključuje cijenu, lokaciju, dostupne termine, prethodne radove, motivaciona rečenica koja će navesti kupce na odabir baš njihovog proizvoda. Zatim napravljena ponuda treba biti odobrena od strane našeg menadžera i tek nakon odobrenja puštena na server.
+
 ### 5.Proces: Kupovina selektovanih stavki i način plaćanja
 
+Kada klijent selektuje stvari on od njih može odustati prije nego klikne dugme finalna kupovina i unese svoj broj kredite kartice tada mi naplaćujemo naše usluge i nakon toga nije moguć povrat novca čak iako se rezervacija otkaže. Način plaćanja je znači karticom i broj se unosi u polje predviđeno za to.
 
+## **Akteri**
+
+###Korisnik usluga(Klijent) 
+
+Korisnik usluga je osoba koja ima mogucnost da putem online sistema izabere i rezervise sve sto joj je potrebno za dogadjaj koji planira.
+
+###Uposlenik
+
+Uposlenik je osoba koja radi neku od ponudjenih usluga za dogadjaje. Ovdje spadaju i vlasnici koji iznajmljuju svoje objekte kao i razni zabavljaci i oni koji su zaduzeni za estetske dodatke ili hranu i pice.
+
+###Supervizor 
+
+Supervizor vrsi update ponudjenih usluga za odredjene datume, da bi klijent uvijek mogao birati samo ono sto mu je dostupno, nadgleda karticno placanje i prosiruje postojece ponudjene usluge dogovarajuci se s novim uposlenicima.
 
