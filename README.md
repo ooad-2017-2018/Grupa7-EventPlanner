@@ -44,9 +44,10 @@ Ukoliko neki objekat, izvođač ili slastičarna želi ponuditi svoje usluge na 
 
 Kada klijent selektuje stvari on od njih može odustati prije nego klikne dugme finalna kupovina i unese svoj broj kredite kartice tada mi naplaćujemo naše usluge i nakon toga nije moguć povrat novca čak iako se rezervacija otkaže. Način plaćanja je znači karticom i broj se unosi u polje predviđeno za to.
 
-## **Funkcionalnost**
+## **Funkcionalnosti**
 
-### Klijent
+### Za korisnike:
+
  - Mogućnost odabira različitih vrsti proslava ili događaja
  - Mogućnost lakšeg odabira odgovarajućih objekata i ostalih pogodnosti u skladu s odabranim eventom (npr. za proslavu dječijeg rođendana se neće nuditi noćni klubovi)
  - Mogućnost izbora dostupnih objekata za željeni događaj
@@ -55,6 +56,18 @@ Kada klijent selektuje stvari on od njih može odustati prije nego klikne dugme 
  - Mogućnost odabira dodataka za željeni objekat (npr. izbor dodatnih pogodnosti ili odstranjivanje određenih koje dolaze u sklopu nekog objekta ukoliko korisnik iste smatra suvišnim)
  - Mogućnost sigurnog i jednostavnog plaćanja uz ispostavljanje odgovarajuće potvrde (računa)
  - Mogućnost otkazivanja rezervacije
+ - Mogućnost besplatne registracije na aplikaciju
+ - Mogućnost dobijanja email izvještaja ukoliko je u određenom periodu neki objekat dostupan uz super cijenu i sl.
+ 
+### Za saradnike:
+
+ - Mogućnost registracije na aplikaciju
+ - Mogućnost dodavanja svih pogodnosti koje Vaš objekat nudi
+ - Mogućnost lakšeg poslovanja i reklame Vašeg objekta
+ - Mogućnost odabira odgovarajuće cijene za ono što Vaš objekat nudi
+ - Mogućnost odabira koji dodaci su obavezni uz Vaš objekat, koji neobavezni, koji se plaćaju dodatno itd.
+ - Mogućnost ispostavljanja odgovarajuće potvrde oko toga ko je kada rezervisao Vaš objekat, uz koje pogodnosti i koliki je Vaš prihod od istoga
+ - Mogućnost određivanja kada su u Vašem objektu dostupni određeni popusti, specijalni meniji i sl.
 
 ### Saradnik
 
