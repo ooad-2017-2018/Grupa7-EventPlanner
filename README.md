@@ -1,4 +1,4 @@
-# Grupa7-EventPlanner
+# Grupa7-Šefice
 ## Naslov projekta: Event Planner
 
 - Članovi grupe:
