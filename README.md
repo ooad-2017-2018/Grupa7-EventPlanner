@@ -1,6 +1,4 @@
 # Grupa7-EventPlanner
-# **I napisati opis teme, indentificirati i opisati procese u sistemu, navesti funkcionalnosti sistema, identificirati aktere u sistemu.**
-
 ## Naslov projekta: Event Planner
 
 - Članovi grupe:
