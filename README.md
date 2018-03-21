@@ -30,7 +30,7 @@ Klijent od ponuđenih objekata bira neki vrši rezervaciju ukoliko je objekat do
 
 ### 3.Proces: Kupovina dodataka
 
-Ukoliko je potrebno i klijent to želi on može iz liste ponuđenih izvođača, bendova, klovnova, kompanija sa limuzinama, klaunova, firmi za dekoraciju prostora, slasticarni i još mnogo toga odabrati nešto za datu proslavu koja se organizuje. 
+Ukoliko je potrebno i klijent to želi on može iz liste ponuđenih izvođača, bendova, kompanija sa limuzinama, klaunova, firmi za dekoraciju prostora, slasticarni i još mnogo toga odabrati nešto za datu proslavu koja se organizuje. 
 Potrebno je naravno da termin proslave odgovara i odabranom "dodatku" događaja.
 Ukoliko usluga nije dostupna, saradnik će biti označen kao nedostupan a klijent treba odabrati nešto drugo.
 
