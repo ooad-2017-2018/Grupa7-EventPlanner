@@ -1,7 +1,7 @@
 # Grupa7-Šefice
 ## Naslov projekta: Event Planner
 
-- Članovi grupe:
+### Članovi grupe:
 - Amela Kurtić
 - Ilma Lušija
 - Amina Ovčina
