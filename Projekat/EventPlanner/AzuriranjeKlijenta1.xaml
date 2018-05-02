@@ -63,11 +63,12 @@
                 <StackPanel x:Name="StekUnos1" VerticalAlignment="Top" HorizontalAlignment="Center" Orientation="Vertical">
 
                     <TextBlock Text="Stari password" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5"/>
-                    <TextBox Text="" Margin="10, 0, 10, 15"/>
+                    <TextBox x:Name="prva" Text="" Margin="10, 0, 10, 15"/>
+                   
                     <TextBlock Text="Novi password" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5"/>
-                    <TextBox Text="" Margin="10, 0, 10, 15"/>
+                    <TextBox x:Name="druga" Text="" Margin="10, 0, 10, 15"/>
                     <TextBlock Text="Ponovite password" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5"/>
-                    <TextBox Text="" Margin="10, 0, 10, 15"/>
+                    <TextBox x:Name="treca" Text="" Margin="10, 0, 10, 15"/>
 
 
                 </StackPanel>
@@ -87,6 +88,6 @@
             <Button Content="Azuriraj" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="#FFE01140" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5"/>
 
         </StackPanel>
-
+        
     </Grid>
 </Page>

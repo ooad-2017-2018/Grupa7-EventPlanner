@@ -92,9 +92,15 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Administrator.cs" />
+    <Compile Include="AdministratorViewModel.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Baza.cs" />
+    <Compile Include="Klijent.cs" />
+    <Compile Include="KlijentViewModel.cs" />
+    <Compile Include="Korisnik.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -104,7 +110,14 @@
     <Compile Include="MyUserControl2.xaml.cs">
       <DependentUpon>MyUserControl2.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Ponuda.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rezervacija.cs" />
+    <Compile Include="RezervacijaViewModel.cs" />
+    <Compile Include="Saradnik.cs" />
+    <Compile Include="SaradnikViewModel.cs" />
+    <Compile Include="Usluga.cs" />
+    <Compile Include="UslugaViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
