@@ -25569,24 +25569,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
+    "C:\\Users\\ilusi\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\sss\\Projekat\\EventPlanner\\EventPlanner.csproj",
+      "projectUniqueName": "C:\\Users\\ilusi\\Desktop\\Najnoviji\\Projekat\\EventPlanner\\EventPlanner.csproj",
       "projectName": "EventPlanner",
-      "projectPath": "C:\\Users\\User\\Desktop\\sss\\Projekat\\EventPlanner\\EventPlanner.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\sss\\Projekat\\EventPlanner\\obj\\",
+      "projectPath": "C:\\Users\\ilusi\\Desktop\\Najnoviji\\Projekat\\EventPlanner\\EventPlanner.csproj",
+      "packagesPath": "C:\\Users\\ilusi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ilusi\\Desktop\\Najnoviji\\Projekat\\EventPlanner\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ilusi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],

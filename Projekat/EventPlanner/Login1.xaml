@@ -1,11 +1,12 @@
 ﻿<Page
-    x:Class="EventPlanner.Login"
+    x:Class="EventPlanner.Login1"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:EventPlanner"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
@@ -21,7 +22,7 @@
                         <Setter Target="StekUnosGlavni.Width" Value="500"/>
                         <Setter Target="StekUnos1.Width" Value="350"/>
                         <Setter Target="StekUnos2.Width" Value="350"/>
-                        <Setter Target="textbox_OVama.Height" Value="40"/>
+                       
 
                     </VisualState.Setters>
                 </VisualState>
@@ -66,14 +67,14 @@
                     <TextBox Text="" Margin="10, 0, 10, 15"/>
                     <TextBlock Text="Password" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5"/>
                     <TextBox Text="" Margin="10, 0, 10, 15"/>
-                    
+
 
 
                 </StackPanel>
 
                 <StackPanel x:Name="StekUnos2" VerticalAlignment="Top" HorizontalAlignment="Center" Orientation="Vertical">
 
-                    
+
 
                 </StackPanel>
 
@@ -84,4 +85,5 @@
         </StackPanel>
 
     </Grid>
+
 </Page>

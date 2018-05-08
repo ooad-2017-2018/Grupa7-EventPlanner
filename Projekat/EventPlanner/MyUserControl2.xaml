@@ -10,9 +10,9 @@
     d:DesignWidth="400">
 
     <Grid Margin="1,-3,-1,3">
-        <TextBlock HorizontalAlignment="Left" Margin="71,40,0,0" Text="Odaberite datum dogadaja:" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged" FontFamily="Showcard Gothic" FocusVisualPrimaryBrush="#FFE21212" Foreground="#FFD61111"/>
+        <TextBlock HorizontalAlignment="Left" Margin="71,40,0,0" Text="Odaberite datum dogadaja:" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged" FontFamily="Showcard Gothic" Foreground="#FFD61111"/>
         <DatePicker HorizontalAlignment="Left" Margin="49,91,0,0" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="71,173,0,0" Text="Odaberite vrijeme dogadaja:" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged" FontFamily="Showcard Gothic" FocusVisualPrimaryBrush="#FFE21212" Foreground="#FFD61111"/>
+        <TextBlock HorizontalAlignment="Left" Margin="71,173,0,0" Text="Odaberite vrijeme dogadaja:" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged" FontFamily="Showcard Gothic" Foreground="#FFD61111"/>
         <TimePicker HorizontalAlignment="Left" Margin="49,220,0,0" VerticalAlignment="Top" Width="296"/>
 
     </Grid>

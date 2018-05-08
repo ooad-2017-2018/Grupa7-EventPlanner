@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="EventPlanner.RegistracijaKlijenta1"
+    x:Class="EventPlanner.Korisnici1"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:EventPlanner"
@@ -21,7 +21,7 @@
                         <Setter Target="StekUnosGlavni.Width" Value="500"/>
                         <Setter Target="StekUnos1.Width" Value="350"/>
                         <Setter Target="StekUnos2.Width" Value="350"/>
-                        <Setter Target="textbox_OVama.Height" Value="40"/>
+                        
 
                     </VisualState.Setters>
                 </VisualState>
@@ -48,44 +48,38 @@
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
 
-        <StackPanel x:Name="StekGlavni" HorizontalAlignment="Left" Orientation="Vertical" VerticalAlignment="Top" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+        <StackPanel x:Name="StekGlavni" HorizontalAlignment="Left" Orientation="Vertical" VerticalAlignment="Top" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Width="768" Height="283" Margin="0,51,0,0">
 
-            <TextBlock Text="Event Planner" TextWrapping="Wrap" HorizontalAlignment="Center" TextAlignment="Left" FontSize="65" FontFamily="Showcard Gothic" Foreground="#FFF0B5F9"/>
+            <TextBlock Text="Korisnici" TextWrapping="Wrap" HorizontalAlignment="Center" TextAlignment="Left" FontSize="65" FontFamily="Showcard Gothic" Foreground="#FFE231AA"/>
 
             <StackPanel x:Name="StekRadio" HorizontalAlignment="Center" VerticalAlignment="Top" Orientation="Horizontal">
 
-                
+
 
             </StackPanel>
 
             <StackPanel x:Name="StekUnosGlavni" HorizontalAlignment="Center" VerticalAlignment="Top" Orientation="Horizontal">
 
-                <StackPanel x:Name="StekUnos1" VerticalAlignment="Top" HorizontalAlignment="Center" Orientation="Vertical">
+                <StackPanel x:Name="StekUnos1" VerticalAlignment="Top" HorizontalAlignment="Center" Orientation="Vertical" Width="437" Height="163">
 
-                    <TextBlock Text="Ime" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5"/>
+                    <TextBlock Text="E-mail" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic" Foreground="#FF181F1C"/>
                     <TextBox Text="" Margin="10, 0, 10, 15"/>
-                    <TextBlock Text="Password" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5"/>
-                    <TextBox Text="" Margin="10, 0, 10, 15"/>
-                    <TextBlock Text="Ponovite password" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5"/>
-                    <TextBox Text="" Margin="10, 0, 10, 15"/>
-                    
+                    <Button Content="Trazi korisnika" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontFamily="Showcard Gothic" Background="#FFE231AA"/>
+
+
+
 
                 </StackPanel>
 
                 <StackPanel x:Name="StekUnos2" VerticalAlignment="Top" HorizontalAlignment="Center" Orientation="Vertical">
 
-                    <TextBlock Text="Prezime" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5"/>
-                    <TextBox Text="" Margin="10, 0, 10, 15"/>
-                    <TextBlock x:Name="E-mail" Text="E-mail" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5"/>
-                    <TextBox x:Name="textbox_OVama" Text="" Margin="10, 0, 10, 15"/>
-                    <TextBlock x:Name="text_KontaktInfo" Text="Broj kreditne kartice" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic" FocusVisualPrimaryBrush="#FF6AF9C5" Foreground="#FF33ECB9"/>
-                    <TextBox x:Name="textbox_KontaktInfo" Text="" Margin="10, 0, 10, 15"/>
+
 
                 </StackPanel>
 
             </StackPanel>
 
-            <Button Content="Registruj se!" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="#FFF0B5F9" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5"/>
+            <Button Content="Obrisi" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="#FFE231AA" FontFamily="Showcard Gothic" Foreground="#FF1B211F" Height="42" Margin="322,0,321,0"/>
 
         </StackPanel>
 
