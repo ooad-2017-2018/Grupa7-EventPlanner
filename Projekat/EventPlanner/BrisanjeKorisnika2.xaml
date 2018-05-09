@@ -71,10 +71,10 @@
 
             </StackPanel>
 
-            <Button Content="Trazi" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="#FFF0B5F9" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5" Height="35" Margin="312,0,322,0" Width="75"/>
+            <Button Content="Trazi" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="#FFF0B5F9" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5" Height="35" Margin="312,0,322,0" Width="75" Click="Button_Click"/>
 
         </StackPanel>
-        <Button Content="Obrisi" HorizontalAlignment="Left" Margin="163,286,0,0" VerticalAlignment="Top" Background="#FFA9F186" FontFamily="Showcard Gothic" Width="93"/>
+        <Button Content="Obrisi" HorizontalAlignment="Left" Margin="163,286,0,0" VerticalAlignment="Top" Background="#FFA9F186" FontFamily="Showcard Gothic" Width="93" Click="Button_Click_1"/>
         <Button Content="Odustani" HorizontalAlignment="Left" Margin="440,286,0,0" VerticalAlignment="Top" Background="#FFF14555" FontFamily="Showcard Gothic"/>
 
     </Grid>

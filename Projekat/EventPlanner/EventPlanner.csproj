@@ -109,9 +109,6 @@
     </Compile>
     <Compile Include="Klijent.cs" />
     <Compile Include="KlijentViewModel.cs" />
-    <Compile Include="Korisnici1.xaml.cs">
-      <DependentUpon>Korisnici1.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Korisnik.cs" />
     <Compile Include="AdministratorMain1.xaml.cs">
       <DependentUpon>AdministratorMain1.xaml</DependentUpon>
@@ -179,10 +176,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="BrisanjeKorisnika2.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Korisnici1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

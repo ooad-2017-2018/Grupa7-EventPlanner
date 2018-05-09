@@ -64,9 +64,9 @@
                 <StackPanel x:Name="StekUnos1" VerticalAlignment="Top" HorizontalAlignment="Center" Orientation="Vertical" Width="437" Height="163">
 
                     <TextBlock Text="E-mail" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5"/>
-                    <TextBox Text="" Margin="10, 0, 10, 15"/>
+                    <TextBox x:Name="prva" Text="" Margin="10, 0, 10, 15"/>
                     <TextBlock Text="Password" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5"/>
-                    <TextBox Text="" Margin="10, 0, 10, 15"/>
+                    <TextBox x:Name="druga" Text="" Margin="10, 0, 10, 15"/>
 
 
 
@@ -80,7 +80,7 @@
 
             </StackPanel>
 
-            <Button Content="Prijavi se" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="#FFE231AA" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5" Height="42" Margin="322,0,321,0"/>
+            <Button Content="Prijavi se" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="#FFE231AA" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5" Height="42" Margin="322,0,321,0" Click="Button_Click"/>
 
         </StackPanel>
 

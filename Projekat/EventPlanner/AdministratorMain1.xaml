@@ -63,7 +63,7 @@
                 <StackPanel x:Name="StekUnos1" VerticalAlignment="Top" HorizontalAlignment="Center" Orientation="Vertical">
 
                     <TextBlock Text="Password administratora" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5"/>
-                    <TextBox Text="" Margin="10, 0, 10, 15"/>
+                    <TextBox x:Name="druga" Text="" Margin="10, 0, 10, 15"/>
 
 
 
@@ -79,7 +79,7 @@
                 </StackPanel>
 
             </StackPanel>
-            <Button Content="Potvrdi password" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="#FFE01140" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5" Margin="77,0,197,0" Width="199"/>
+            <Button Content="Potvrdi password" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="#FFE01140" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5" Margin="77,0,197,0" Width="199" Click="Button_Click"/>
 
         </StackPanel>
 

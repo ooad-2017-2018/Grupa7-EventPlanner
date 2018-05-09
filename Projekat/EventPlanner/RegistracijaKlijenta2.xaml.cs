@@ -22,9 +22,25 @@ namespace EventPlanner
     /// </summary>
     public sealed partial class RegistracijaKlijenta2 : Page
     {
-        public RegistracijaKlijenta2()
+        Baza baza;
+        public RegistracijaKlijenta2(Baza bazica)
         {
             this.InitializeComponent();
+            baza = bazica;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string ime1 = ime.Text;
+            string prezime1 = prezime.Text;
+            string password1 = password.Text;
+            if (ime1.Length < 2) throw new Exception("Neispravan unos");
+            if (prezime1.Length < 3) throw new Exception("Neispravan unos");
+            if (password1.Length < 5) throw new Exception("Neispravan format sifre");
+            if (password1 != novi.Text) throw new Exception("Password i potvrda se razlikuju");
+            if (textbox_KontaktInfo.Text.Length < 10) throw new Exception("Nesipravan format korisnickog imena");
+            if (textbox_OVama.Text.Length < 6) throw new Exception("Neisoravan format broja kreditne kartice");
+
         }
     }
 }

@@ -22,9 +22,27 @@ namespace EventPlanner
     /// </summary>
     public sealed partial class Login1 : Page
     {
-        public Login1()
+        Baza baza;
+        public Login1(Baza bazica)
         {
             this.InitializeComponent();
+            baza = bazica;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            bool nadjeno1 = false;
+            for(int i = 0; i < baza.ListaKlijenata.Count(); i++)
+            {
+                if (baza.ListaKlijenata[i].KorisnickoIme == prva.Text && baza.ListaKlijenata[i].Sifra == druga.Text) nadjeno1 = true;
+              
+            }
+            for (int i = 0; i < baza.ListaSaradnika.Count(); i++)
+            {
+                if (baza.ListaSaradnika[i].KorisnickoIme == prva.Text && baza.ListaSaradnika[i].Sifra == druga.Text) nadjeno1 = true;
+
+            }
+            if (nadjeno1 == false) throw new Exception("Nije pronadjen niti jedan korisnik sa datim podacima");
         }
     }
 }

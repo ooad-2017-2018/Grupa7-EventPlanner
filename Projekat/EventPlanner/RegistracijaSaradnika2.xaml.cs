@@ -22,9 +22,26 @@ namespace EventPlanner
     /// </summary>
     public sealed partial class RegistracijaSaradnika2 : Page
     {
-        public RegistracijaSaradnika2()
+        Baza baza;
+        public RegistracijaSaradnika2(Baza bazica)
         {
             this.InitializeComponent();
+            baza = bazica;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            bool nadjeno = false;
+            if (naziv.Text.Length < 5) throw new Exception("Nepravilan naziv usluge");
+            if (vrsta.Text.Length < 5) throw new Exception("Nepravilna vrsta usluge");
+            for(int i = 0; i < baza.ListaSaradnika.Count(); i++)
+            {
+                if (pass.Text == baza.ListaSaradnika[i].Sifra) nadjeno = true;
+            }
+            if (nadjeno == false) throw new Exception("Nije pronaadjen nijedan uneseni password");
+            if (textbox_KontaktInfo.Text.Length < 6) throw new Exception("Neispravan unos");
+            if (textbox_OVama.Text.Length < 6) throw new Exception("Nesipravan unos");
+            if (adres.Text.Length < 4) throw new Exception("Nesipravan unos");
         }
     }
 }

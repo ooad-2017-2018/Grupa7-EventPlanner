@@ -76,7 +76,7 @@
                 <StackPanel x:Name="StekUnos2" VerticalAlignment="Top" HorizontalAlignment="Center" Orientation="Vertical">
 
                     
-                    <TextBlock x:Name="Email" Text="Novi e-mail" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5"/>
+                    <TextBlock x:Name="Email" Text="Novo korisnicko ime" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5"/>
                     <TextBox x:Name="textbox_OVama" Text="" Margin="10, 0, 10, 15"/>
                     <TextBlock x:Name="text_KontaktInfo" Text="Broj kreditne kartice" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic"  Foreground="#FFF0B5F9"/>
                     <TextBox x:Name="textbox_KontaktInfo" Text="" Margin="10, 0, 10, 15"/>
@@ -85,7 +85,7 @@
 
             </StackPanel>
 
-            <Button Content="Azuriraj" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="#FFE01140" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5"/>
+            <Button Content="Azuriraj" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="#FFE01140" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5" Click="Button_Click"/>
 
         </StackPanel>
         

@@ -22,9 +22,31 @@ namespace EventPlanner
     /// </summary>
     public sealed partial class Rezervacije1 : Page
     {
-        public Rezervacije1()
+        Baza baza;
+        public Rezervacije1(Baza bazica)
         {
             this.InitializeComponent();
+            baza = bazica;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            bool nadjeno = false;
+            for (int i = 0; i < baza.ListaRezervacija.Count(); i++)
+            {
+                if (baza.ListaRezervacija[i].BrojRezervacije.ToString() == deseta.Text) nadjeno = true;
+
+            }
+            if (nadjeno == false) throw new Exception("Nepostojeci ID broj rezervacije");
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            for (int i = 0; i < baza.ListaRezervacija.Count(); i++)
+            {
+                if (baza.ListaRezervacija[i].BrojRezervacije.ToString() == deseta.Text) baza.ListaRezervacija.Remove(baza.ListaRezervacija[i]);
+
+            }
         }
     }
 }

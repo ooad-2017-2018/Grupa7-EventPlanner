@@ -63,11 +63,11 @@
                 <StackPanel x:Name="StekUnos1" VerticalAlignment="Top" HorizontalAlignment="Center" Orientation="Vertical">
 
                     <TextBlock Text="Naziv" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5"/>
-                    <TextBox Text="" Margin="10, 0, 10, 15"/>
+                    <TextBox x:Name="naziv" Text="" Margin="10, 0, 10, 15"/>
                     <TextBlock Text="vrsta usluge" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5"/>
-                    <TextBox Text="" Margin="10, 0, 10, 15"/>
+                    <TextBox x:Name="vrsta" Text="" Margin="10, 0, 10, 15"/>
                     <TextBlock Text="password" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="8,10,0,5" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5"/>
-                    <TextBox Text="" Margin="10, 0, 10, 15"/>
+                    <TextBox x:Name="pass" Text="" Margin="10, 0, 10, 15"/>
 
 
                 </StackPanel>
@@ -75,7 +75,7 @@
                 <StackPanel x:Name="StekUnos2" VerticalAlignment="Top" HorizontalAlignment="Center" Orientation="Vertical">
 
                     <TextBlock Text="Adresa" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5"/>
-                    <TextBox Text="" Margin="10, 0, 10, 15"/>
+                    <TextBox x:Name="adres" Text="" Margin="10, 0, 10, 15"/>
                     <TextBlock x:Name="Email" Text="kontakt" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5"/>
                     <TextBox x:Name="textbox_OVama" Text="" Margin="10, 0, 10, 15"/>
                     <TextBlock x:Name="text_KontaktInfo" Text="Broj kreditne kartice" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic" Foreground="#FF33ECB9"/>
@@ -85,7 +85,7 @@
 
             </StackPanel>
 
-            <Button Content="Registruj se!" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="#FFF0B5F9" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5"/>
+            <Button Content="Potvrdi!" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="#FFF0B5F9" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5" Click="Button_Click"/>
 
         </StackPanel>
 

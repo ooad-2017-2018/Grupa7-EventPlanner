@@ -62,8 +62,8 @@
                 <StackPanel x:Name="StekUnos1" VerticalAlignment="Top" HorizontalAlignment="Center" Orientation="Vertical" Width="437" Height="163">
 
                     <TextBlock Text="id usluge" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic" Foreground="#FF181F1C"/>
-                    <TextBox Text="" Margin="10, 0, 10, 15"/>
-                    <Button Content="Trazi uslugu" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontFamily="Showcard Gothic" Background="#FFE231AA"/>
+                    <TextBox x:Name="druga" Text="" Margin="10, 0, 10, 15"/>
+                    <Button Content="Trazi uslugu" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontFamily="Showcard Gothic" Background="#FFE231AA" Click="Button_Click"/>
 
 
 
@@ -78,7 +78,7 @@
 
             </StackPanel>
 
-            <Button Content="Obrisi" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="#FFE231AA" FontFamily="Showcard Gothic" Foreground="#FF1B211F" Height="42" Margin="322,0,321,0"/>
+            <Button Content="Obrisi" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="#FFE231AA" FontFamily="Showcard Gothic" Foreground="#FF1B211F" Height="42" Margin="322,0,321,0" Click="Button_Click_1"/>
 
         </StackPanel>
 
