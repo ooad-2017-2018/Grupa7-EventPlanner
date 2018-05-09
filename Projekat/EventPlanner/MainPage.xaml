@@ -7,7 +7,74 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,2,0,0">
-        
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="VisualStateGroup">
+                <VisualState x:Name="Phone">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="StekUnosGlavni.Orientation" Value="Vertical"/>
+                        <Setter Target="StekGlavni.Width" Value="500"/>
+                        <Setter Target="StekUnosGlavni.Width" Value="500"/>
+                        <Setter Target="StekUnos1.Width" Value="350"/>
+                        <Setter Target="StekUnos2.Width" Value="350"/>
+
+
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="Tablet">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="700"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="StekUnosGlavni.Orientation" Value="Horizontal"/>
+                        <Setter Target="StekUnos1.Width" Value="350"/>
+                        <Setter Target="StekUnos2.Width" Value="350"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="Desktop">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="1000"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="StekUnosGlavni.Orientation" Value="Horizontal"/>
+                        <Setter Target="StekUnos1.Width" Value="500"/>
+                        <Setter Target="StekUnos2.Width" Value="500"/>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+        <StackPanel x:Name="StekGlavni" HorizontalAlignment="Left" Orientation="Vertical" VerticalAlignment="Top" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Width="750" Height="283" Margin="0,51,0,0">
+
+            <TextBlock Text="Event Planner" TextWrapping="Wrap" HorizontalAlignment="Center" TextAlignment="Left" FontSize="65" FontFamily="Showcard Gothic" Foreground="#FFE231AA"/>
+
+            <StackPanel x:Name="StekRadio" HorizontalAlignment="Center" VerticalAlignment="Top" Orientation="Horizontal">
+
+
+
+            </StackPanel>
+
+            <StackPanel x:Name="StekUnosGlavni" HorizontalAlignment="Center" VerticalAlignment="Top" Orientation="Horizontal" Margin="-422,0,-78,0" Width="1250" RenderTransformOrigin="0.51,0.491">
+
+                <StackPanel x:Name="StekUnos1" VerticalAlignment="Top" HorizontalAlignment="Center" Orientation="Vertical" Width="370" Height="163"/>
+                <Button Content="Prijavi se" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="#FFE231AA" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5" Height="42" Margin="336,0,-83,0" Click="Button_Click" RenderTransformOrigin="-0.825,1.286"/>
+                <TextBlock Text="Dobrodosli" TextWrapping="Wrap" HorizontalAlignment="Center" TextAlignment="Left" FontSize="65" FontFamily="Showcard Gothic" Foreground="#FFE231AA" SelectionChanged="TextBlock_SelectionChanged"/>
+                <Button Content="Registruj se" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="#FFE231AA" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5" Height="42" Click="Button_Click" RenderTransformOrigin="-0.263,0.452"/>
+
+                <StackPanel x:Name="StekUnos2" VerticalAlignment="Top" HorizontalAlignment="Center" Orientation="Vertical">
+
+
+
+                </StackPanel>
+                <TextBlock Text="Dobrodosli" TextWrapping="Wrap" HorizontalAlignment="Center" TextAlignment="Left" FontSize="65" FontFamily="Showcard Gothic" Foreground="#FFE231AA"/>
+
+            </StackPanel>
+
+        </StackPanel>
+
     </Grid>
 </Page>

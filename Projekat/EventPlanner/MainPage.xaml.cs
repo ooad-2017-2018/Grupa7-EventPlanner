@@ -37,5 +37,10 @@ namespace EventPlanner
             //hshs
             //bbbb
         }
+
+        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
