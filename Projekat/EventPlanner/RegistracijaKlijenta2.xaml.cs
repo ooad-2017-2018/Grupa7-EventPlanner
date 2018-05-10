@@ -42,5 +42,9 @@ namespace EventPlanner
             if (textbox_OVama.Text.Length < 6) throw new Exception("Neisoravan format broja kreditne kartice");
 
         }
+
+        private void ime_TextChanged(object sender, TextChangedEventArgs e)
+        {
+        }
     }
 }

@@ -108,6 +108,7 @@
       <DependentUpon>BrisanjeKorisnika2.xaml</DependentUpon>
     </Compile>
     <Compile Include="Klijent.cs" />
+    <Compile Include="KlijentBaza.cs" />
     <Compile Include="KlijentViewModel.cs" />
     <Compile Include="Korisnik.cs" />
     <Compile Include="AdministratorMain1.xaml.cs">
@@ -217,6 +218,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.Mobile.Client">
+      <Version>4.0.2</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.0.8</Version>
     </PackageReference>

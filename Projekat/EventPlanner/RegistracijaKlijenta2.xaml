@@ -63,7 +63,7 @@
                 <StackPanel x:Name="StekUnos1" VerticalAlignment="Top" HorizontalAlignment="Center" Orientation="Vertical">
 
                     <TextBlock Text="Ime" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5"/>
-                    <TextBox x:Name="ime" Text="" Margin="10, 0, 10, 15"/>
+                    <TextBox x:Name="ime" Text="" Margin="10, 0, 10, 15" TextChanged="ime_TextChanged"/>
                     <TextBlock Text="Password" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5"/>
                     <TextBox x:Name="password" Text="" Margin="10, 0, 10, 15"/>
                     <TextBlock Text="Ponovite password" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5"/>
