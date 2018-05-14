@@ -31,7 +31,7 @@ namespace EventPlanner
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string nesto = textbox_OVama.Text;
+            string nesto = textBoxus.Text;
             bool nadjeno = false;
             for(int i = 0; i < baza.ListaKlijenata.Count(); i++)
             {
@@ -46,7 +46,7 @@ namespace EventPlanner
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            string nesto = textbox_OVama.Text;
+            string nesto = textBoxus.Text;
             bool nadjeno = false;
             for (int i = 0; i < baza.ListaKlijenata.Count(); i++)
             {
@@ -56,6 +56,40 @@ namespace EventPlanner
                     baza.ListaKlijenata.Remove(baza.ListaKlijenata[i]);
                 }
             }
+        }
+
+        private void dugmetrazi_Click(object sender, RoutedEventArgs e)
+        {
+            string nesto = textBoxus.Text;
+            bool nadjeno = false;
+            for (int i = 0; i < baza.ListaKlijenata.Count(); i++)
+            {
+                if (nesto == baza.ListaKlijenata[i].BrojKartice)
+                {
+                    nadjeno = true;
+
+                }
+            }
+            if (nadjeno == false) throw new Exception("nepostojeci korisnik");
+        }
+
+        private void dugmepotvrdi_Click(object sender, RoutedEventArgs e)
+        {
+            string nesto = textBoxus.Text;
+            bool nadjeno = false;
+            for (int i = 0; i < baza.ListaKlijenata.Count(); i++)
+            {
+                if (nesto == baza.ListaKlijenata[i].BrojKartice)
+                {
+                    nadjeno = true;
+                    baza.ListaKlijenata.Remove(baza.ListaKlijenata[i]);
+                }
+            }
+        }
+
+        private void dugmeodustani_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(AdminIzbornik));
         }
     }
 }

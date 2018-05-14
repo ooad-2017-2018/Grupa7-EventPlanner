@@ -20,10 +20,10 @@ namespace EventPlanner
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class AzuriranjeSaradnika2 : Page
+    public sealed partial class DodajUslugu : Page
     {
         Baza baza;
-        public AzuriranjeSaradnika2(Baza bazica)
+        public DodajUslugu(Baza bazica)
         {
             this.InitializeComponent();
             baza = bazica;
@@ -31,22 +31,14 @@ namespace EventPlanner
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            bool nadjeno = false;
-            if (prva.Text.Length < 5) throw new Exception("Prekratak naziv");
-            if (druga.Text.Length < 5) throw new Exception("Prekratka vrsta");
-            for(int i = 0; i < baza.ListaSaradnika.Count(); i++)
-            {
-                if (treca.Text == baza.ListaSaradnika[i].IDbroj.ToString()) nadjeno = true;
-            }
-            if (nadjeno == false) throw new Exception("Nepostojeci password saradnika");
-            if (cetvrta.Text.Length < 5) throw new Exception("Prekratka adresa");
-            if (textbox_KontaktInfo.Text.Length < 5) throw new Exception("Prekratak opis");
-            if (textbox_OVama.Text.Length < 5) throw new Exception("Neodgovarajuci format broja kreditne kartice");
+            this.Frame.Navigate(typeof(IzbornikKorisnika));
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(Izbornik));
+            if (prva.Text.Length < 3) throw new Exception("nevalidan unos");
+            if (druga.Text.Length < 3) throw new Exception("nevalidan unos");
+            if (treca.Text.Length < 3) throw new Exception("nevalidan unos");
         }
     }
 }

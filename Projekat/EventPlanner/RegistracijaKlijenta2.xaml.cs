@@ -46,5 +46,10 @@ namespace EventPlanner
         private void ime_TextChanged(object sender, TextChangedEventArgs e)
         {
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(IzbornikKorisnika));
+        }
     }
 }

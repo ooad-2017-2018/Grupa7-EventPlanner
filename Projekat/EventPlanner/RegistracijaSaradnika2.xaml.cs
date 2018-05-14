@@ -43,5 +43,10 @@ namespace EventPlanner
             if (textbox_OVama.Text.Length < 6) throw new Exception("Nesipravan unos");
             if (adres.Text.Length < 4) throw new Exception("Nesipravan unos");
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Izbornik));
+        }
     }
 }

@@ -20,33 +20,29 @@ namespace EventPlanner
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Rezervacije1 : Page
+    public sealed partial class ObrisiSvojuRezervaciju : Page
     {
-        Baza baza;
-        public Rezervacije1(Baza bazica)
+        Baza bazica;
+        public ObrisiSvojuRezervaciju(Baza baza)
         {
             this.InitializeComponent();
-            baza = bazica;
+            bazica = baza;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void dugmetrazi_Click(object sender, RoutedEventArgs e)
         {
             bool nadjeno = false;
-            for (int i = 0; i < baza.ListaRezervacija.Count(); i++)
-            {
-                if (baza.ListaRezervacija[i].BrojRezervacije.ToString() == deseta.Text) nadjeno = true;
-
-            }
-            if (nadjeno == false) throw new Exception("Nepostojeci ID broj rezervacije");
+            
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void dugmepotvrdi_Click(object sender, RoutedEventArgs e)
         {
-            for (int i = 0; i < baza.ListaRezervacija.Count(); i++)
-            {
-                if (baza.ListaRezervacija[i].BrojRezervacije.ToString() == deseta.Text) baza.ListaRezervacija.Remove(baza.ListaRezervacija[i]);
 
-            }
+        }
+
+        private void dugmeodustani_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(IzbornikKorisnika));
         }
     }
 }

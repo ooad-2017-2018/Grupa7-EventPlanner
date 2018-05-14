@@ -6,9 +6,37 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    <Grid x:Name="grid1" Background="White">
 
+        <Grid HorizontalAlignment="Left" Height="Auto" Margin="28,35,0,0" VerticalAlignment="Top" Width="Auto"/>
+        <Button x:Name="dugmePrijavi" Content="Prijavi se" HorizontalAlignment="Center" VerticalAlignment="Center" Width="230"
+                Grid.Row="2" FontSize="30" Height="50"
+                Grid.ColumnSpan="2" Click="dugmePrijaviSe_Click" FontFamily="Showcard Gothic"/>
+        <TextBlock x:Name="textBlockLoz" HorizontalAlignment="Right" Margin="15,15,30,15" Text="Password:" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Showcard Gothic"
+                   Grid.Row="1" FontSize="20"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Right" Margin="15,15,30,15" TextWrapping="Wrap" VerticalAlignment="Bottom"
+                   Grid.Row="0" Grid.Column="0" FontSize="20" Text="username:" FontFamily="Showcard Gothic"
+                  />
+        <TextBox x:Name="textBoxus" Grid.Column="1"  HorizontalAlignment="Left" Margin="5,15,15,15" Grid.Row="0" Text=""
+                 VerticalAlignment="Bottom" Width="150"/>
+        <TextBox x:Name="password" Grid.Column="1"  HorizontalAlignment="Left" Margin="5,15,15,15" Grid.Row="1" Text=""
+                 VerticalAlignment="Top" Width="150"/>
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="textBloc" HorizontalAlignment="Center" Margin="15,15,30,15" TextWrapping="Wrap" VerticalAlignment="Center"
+                   Grid.Row="0" Grid.Column="0" FontSize="30" Text="prijava" FontFamily="Showcard Gothic"
+                  />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Name="lijeviDio" Width="*" />
+            <ColumnDefinition x:Name="desniDio" Width="*" />
+        </Grid.ColumnDefinitions>
 
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroup x:Name="VisualStateGroup">
@@ -16,24 +44,19 @@
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="0"/>
                     </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                        <Setter Target="StekUnosGlavni.Orientation" Value="Vertical"/>
-                        <Setter Target="StekGlavni.Width" Value="500"/>
-                        <Setter Target="StekUnosGlavni.Width" Value="500"/>
-                        <Setter Target="StekUnos1.Width" Value="350"/>
-                        <Setter Target="StekUnos2.Width" Value="350"/>
-                       
-
-                    </VisualState.Setters>
                 </VisualState>
                 <VisualState x:Name="Tablet">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="700"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="StekUnosGlavni.Orientation" Value="Horizontal"/>
-                        <Setter Target="StekUnos1.Width" Value="350"/>
-                        <Setter Target="StekUnos2.Width" Value="350"/>
+                        <Setter Target="textBoxus.Width" Value="300"/>
+                        <Setter Target="password.Width" Value="300"/>
+                        <Setter Target="dugmePrijavi.Width" Value="300"/>
+                        <Setter Target="textBlock.FontSize" Value="22"/>
+                        <Setter Target="textBlockLoz.FontSize" Value="22"/>
+                        <Setter Target="textBoxus.FontSize" Value="22"/>
+                        <Setter Target="password.FontSize" Value="22"/>
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState x:Name="Desktop">
@@ -41,49 +64,17 @@
                         <AdaptiveTrigger MinWindowWidth="1000"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="StekUnosGlavni.Orientation" Value="Horizontal"/>
-                        <Setter Target="StekUnos1.Width" Value="500"/>
-                        <Setter Target="StekUnos2.Width" Value="500"/>
+                        <Setter Target="textBoxus.Width" Value="400"/>
+                        <Setter Target="password.Width" Value="400"/>
+                        <Setter Target="dugmePrijavi.Width" Value="400"/>
+                        <Setter Target="textBlock.FontSize" Value="24"/>
+                        <Setter Target="textBlockLoz.FontSize" Value="24"/>
+                        <Setter Target="textBoxus.FontSize" Value="24"/>
+                        <Setter Target="password.FontSize" Value="24"/>
                     </VisualState.Setters>
                 </VisualState>
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
-
-        <StackPanel x:Name="StekGlavni" HorizontalAlignment="Left" Orientation="Vertical" VerticalAlignment="Top" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Width="768" Height="283" Margin="0,51,0,0">
-
-            <TextBlock Text="Event Planner" TextWrapping="Wrap" HorizontalAlignment="Center" TextAlignment="Left" FontSize="65" FontFamily="Showcard Gothic" Foreground="#FFE231AA"/>
-
-            <StackPanel x:Name="StekRadio" HorizontalAlignment="Center" VerticalAlignment="Top" Orientation="Horizontal">
-
-
-
-            </StackPanel>
-
-            <StackPanel x:Name="StekUnosGlavni" HorizontalAlignment="Center" VerticalAlignment="Top" Orientation="Horizontal">
-
-                <StackPanel x:Name="StekUnos1" VerticalAlignment="Top" HorizontalAlignment="Center" Orientation="Vertical" Width="437" Height="163">
-
-                    <TextBlock Text="E-mail" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5"/>
-                    <TextBox x:Name="prva" Text="" Margin="10, 0, 10, 15"/>
-                    <TextBlock Text="Password" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5"/>
-                    <TextBox x:Name="druga" Text="" Margin="10, 0, 10, 15"/>
-
-
-
-                </StackPanel>
-
-                <StackPanel x:Name="StekUnos2" VerticalAlignment="Top" HorizontalAlignment="Center" Orientation="Vertical">
-
-
-
-                </StackPanel>
-
-            </StackPanel>
-
-            <Button Content="Prijavi se" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="#FFE231AA" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5" Height="42" Margin="322,0,321,0" Click="Button_Click"/>
-
-        </StackPanel>
-
     </Grid>
 
 </Page>

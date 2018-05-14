@@ -86,6 +86,7 @@
             </StackPanel>
 
             <Button Content="Azuriraj!" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="#FF4B89D4" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5" Click="Button_Click"/>
+            <Button Content="Izbornik" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="#FF4B89D4" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5" Click="Button_Click_1" />
 
         </StackPanel>
 

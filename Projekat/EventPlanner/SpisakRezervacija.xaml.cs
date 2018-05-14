@@ -20,19 +20,11 @@ namespace EventPlanner
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Main1 : Page
+    public sealed partial class SpisakRezervacija : Page
     {
-        Baza bazica;
-        public Main1(Baza baza)
+        public SpisakRezervacija()
         {
             this.InitializeComponent();
-            bazica = baza;
-        }
-        
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            string password = druga.Text;
-            if (password != bazica.Administrator.Sifra) throw new Exception("Netacan password!");
         }
     }
 }

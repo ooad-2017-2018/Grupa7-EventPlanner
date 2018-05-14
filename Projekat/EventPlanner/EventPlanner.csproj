@@ -94,6 +94,9 @@
   <ItemGroup>
     <Compile Include="Administrator.cs" />
     <Compile Include="AdministratorViewModel.cs" />
+    <Compile Include="AdminIzbornik.xaml.cs">
+      <DependentUpon>AdminIzbornik.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
@@ -107,24 +110,33 @@
     <Compile Include="BrisanjeKorisnika2.xaml.cs">
       <DependentUpon>BrisanjeKorisnika2.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DodajUslugu.xaml.cs">
+      <DependentUpon>DodajUslugu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Izbornik.xaml.cs">
+      <DependentUpon>Izbornik.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IzbornikKorisnika.xaml.cs">
+      <DependentUpon>IzbornikKorisnika.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Klijent.cs" />
     <Compile Include="KlijentBaza.cs" />
     <Compile Include="KlijentViewModel.cs" />
     <Compile Include="Korisnik.cs" />
-    <Compile Include="AdministratorMain1.xaml.cs">
-      <DependentUpon>AdministratorMain1.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Login1.xaml.cs">
       <DependentUpon>Login1.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MyUserControl1.xaml.cs">
       <DependentUpon>MyUserControl1.xaml</DependentUpon>
     </Compile>
     <Compile Include="MyUserControl2.xaml.cs">
       <DependentUpon>MyUserControl2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ObrisiSvojuRezervaciju.xaml.cs">
+      <DependentUpon>ObrisiSvojuRezervaciju.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ObrisiUsluguSistem_Svoju.xaml.cs">
+      <DependentUpon>ObrisiUsluguSistem_Svoju.xaml</DependentUpon>
     </Compile>
     <Compile Include="Ponuda.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -136,15 +148,18 @@
     </Compile>
     <Compile Include="Rezervacija.cs" />
     <Compile Include="RezervacijaViewModel.cs" />
-    <Compile Include="Rezervacije1.xaml.cs">
-      <DependentUpon>Rezervacije1.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Saradnik.cs" />
     <Compile Include="SaradnikViewModel.cs" />
+    <Compile Include="SpisakRezervacija.xaml.cs">
+      <DependentUpon>SpisakRezervacija.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UlazniPage.xaml.cs">
+      <DependentUpon>UlazniPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Usluga.cs" />
     <Compile Include="UslugaViewModel.cs" />
-    <Compile Include="Usluge1.xaml.cs">
-      <DependentUpon>Usluge1.xaml</DependentUpon>
+    <Compile Include="VrstaEventa.xaml.cs">
+      <DependentUpon>VrstaEventa.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -168,6 +183,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="AdminIzbornik.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="AzuriranjeKlijenta2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -180,7 +199,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AdministratorMain1.xaml">
+    <Page Include="DodajUslugu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Izbornik.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IzbornikKorisnika.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -188,15 +215,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="MyUserControl1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MyUserControl2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ObrisiSvojuRezervaciju.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ObrisiUsluguSistem_Svoju.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -208,11 +239,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Rezervacije1.xaml">
+    <Page Include="SpisakRezervacija.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Usluge1.xaml">
+    <Page Include="UlazniPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VrstaEventa.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

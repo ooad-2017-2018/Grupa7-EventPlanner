@@ -28,19 +28,30 @@ namespace EventPlanner
             this.InitializeComponent();
             baza = bazica;
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void dugmePrijaviSe_Click(object sender, RoutedEventArgs e)
         {
             bool nadjeno1 = false;
-            for(int i = 0; i < baza.ListaKlijenata.Count(); i++)
+            for (int i = 0; i < baza.ListaKlijenata.Count(); i++)
             {
-                if (baza.ListaKlijenata[i].KorisnickoIme == prva.Text && baza.ListaKlijenata[i].Sifra == druga.Text) nadjeno1 = true;
-              
+                if (baza.ListaKlijenata[i].KorisnickoIme == textBoxus.Text && baza.ListaKlijenata[i].Sifra == password.Text)
+                {
+                    nadjeno1 = true;
+                    this.Frame.Navigate(typeof(IzbornikKorisnika));
+                }
+
             }
             for (int i = 0; i < baza.ListaSaradnika.Count(); i++)
             {
-                if (baza.ListaSaradnika[i].KorisnickoIme == prva.Text && baza.ListaSaradnika[i].Sifra == druga.Text) nadjeno1 = true;
+                if (baza.ListaSaradnika[i].KorisnickoIme == textBoxus.Text && baza.ListaSaradnika[i].Sifra == password.Text)
+                {
+                    nadjeno1 = true;
+                    this.Frame.Navigate(typeof(Izbornik));
+                }
 
+            }
+            if (baza.Administrator.KorisnickoIme == textBoxus.Text && baza.Administrator.Sifra == password.Text) {
+                nadjeno1 = true;
+                this.Frame.Navigate(typeof(AdminIzbornik));
             }
             if (nadjeno1 == false) throw new Exception("Nije pronadjen niti jedan korisnik sa datim podacima");
         }

@@ -71,5 +71,10 @@ namespace EventPlanner
             if (nadjeno == false) throw new Exception("Nepostojeci password");
 
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(IzbornikKorisnika));
+        }
     }
 }

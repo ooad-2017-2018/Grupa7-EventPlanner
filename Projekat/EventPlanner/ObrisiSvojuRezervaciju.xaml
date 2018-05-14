@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="EventPlanner.BrisanjeKorisnika2"
+    x:Class="EventPlanner.ObrisiSvojuRezervaciju"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:EventPlanner"
@@ -19,12 +19,12 @@
         <Button x:Name="dugmeodustani" Content="Odustani" HorizontalAlignment="Center" VerticalAlignment="Center" Width="230"
                 Grid.Row="3" FontSize="30" Height="50"
                 Grid.ColumnSpan="2" FontFamily="Showcard Gothic" Click="dugmeodustani_Click"/>
-        <TextBlock x:Name="textBlockKreditna" HorizontalAlignment="Right" Margin="15,15,30,15" Text="broj kreditne kartice:" TextWrapping="Wrap" VerticalAlignment="Bottom" FontFamily="Showcard Gothic"
+        <TextBlock x:Name="textBlockKreditna" HorizontalAlignment="Right" Margin="15,15,30,15" Text="broj rezervacije:" TextWrapping="Wrap" VerticalAlignment="Bottom" FontFamily="Showcard Gothic"
                    Grid.Row="0" FontSize="25"/>
-       
+
         <TextBox x:Name="textBoxus" Grid.Column="1"  HorizontalAlignment="Left" Margin="5,15,15,15" Grid.Row="0" Text=""
                  VerticalAlignment="Bottom" Width="150"/>
-      
+
 
         <TextBlock x:Name="textBloc" HorizontalAlignment="Center" Margin="15,15,30,15" TextWrapping="Wrap" VerticalAlignment="Center"
                    Grid.Row="0" Grid.Column="0" FontSize="30" Text="brisi" FontFamily="Showcard Gothic"
@@ -80,5 +80,4 @@
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
     </Grid>
-
 </Page>

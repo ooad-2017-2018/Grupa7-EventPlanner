@@ -8,5 +8,7 @@ namespace EventPlanner
 {
     public class Klijent : Korisnik
     {
+        public List<Rezervacija> mojerezervacije = new List<Rezervacija>();
+        public List<Rezervacija> MojeRezervacije { get => mojerezervacije; set => mojerezervacije = value; }
     }
 }
