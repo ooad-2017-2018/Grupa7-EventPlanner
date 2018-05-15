@@ -8,6 +8,11 @@ namespace EventPlanner
 {
     public class Administrator : Korisnik
     {
+        public Administrator(string naziv, string sifra, string korisnickoime, string brojkartice) : base(naziv, sifra, korisnickoime, brojkartice)
+        {
+
+        }
+
         public void OtkaziRezervaciju(int brojrezervacije, Baza b)
         {
            for(int i = 0; i < b.ListaRezervacija.Count(); i++)
@@ -38,7 +43,7 @@ namespace EventPlanner
         {
             for(int i = 0; i < b.ListaSaradnika.Count(); i++)
             {
-                if (b.ListaSaradnika[i].IDbroj == id) b.ListaSaradnika.Remove(b.ListaSaradnika[i]);
+                if (b.ListaSaradnika[i].Id == id) b.ListaSaradnika.Remove(b.ListaSaradnika[i]);
             }
         }
 

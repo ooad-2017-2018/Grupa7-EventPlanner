@@ -77,9 +77,9 @@
                     <TextBlock Text="Prezime" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5"/>
                     <TextBox x:Name="prezime" Text="" Margin="10, 0, 10, 15"/>
                     <TextBlock x:Name="Email" Text="Korisnicko ime" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5"/>
-                    <TextBox x:Name="textbox_OVama" Text="" Margin="10, 0, 10, 15"/>
+                    <TextBox x:Name="korime" Text="" Margin="10, 0, 10, 15"/>
                     <TextBlock x:Name="text_KontaktInfo" Text="Broj kreditne kartice" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic" Foreground="#FF33ECB9"/>
-                    <TextBox x:Name="textbox_KontaktInfo" Text="" Margin="10, 0, 10, 15"/>
+                    <TextBox x:Name="brkar" Text="" Margin="10, 0, 10, 15"/>
 
                 </StackPanel>
 

@@ -157,6 +157,7 @@
       <DependentUpon>UlazniPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Usluga.cs" />
+    <Compile Include="UslugaBaza.cs" />
     <Compile Include="UslugaViewModel.cs" />
     <Compile Include="VrstaEventa.xaml.cs">
       <DependentUpon>VrstaEventa.xaml</DependentUpon>

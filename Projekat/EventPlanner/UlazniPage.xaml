@@ -8,6 +8,42 @@
     mc:Ignorable="d">
 
     <Grid x:Name="grid1" Background="AntiqueWhite">
+       
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Name="lijeviDio" Width="*" />
+            <ColumnDefinition x:Name="desniDio" Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="VisualStateGroup">
+                <VisualState x:Name="Phone">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="Tablet">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="700"/>
+                    </VisualState.StateTriggers>
+                   
+                    <VisualState.Setters>
+                        <Setter Target="lijeviDio.Width" Value="2*"/>
+                        <Setter Target="desniDio.Width" Value="3*"/>
+                    </VisualState.Setters>
+                    
+                </VisualState>
+                <VisualState x:Name="Desktop">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="1000"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="lijeviDio.Width" Value="2*"/>
+                        <Setter Target="desniDio.Width" Value="3*"/>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
 
         <Grid HorizontalAlignment="Left" Height="Auto" Margin="28,35,0,0" VerticalAlignment="Top" Width="Auto"/>
         <Button x:Name="dugmePrijaviSe" Content="saradnik-registracija" HorizontalAlignment="Center" VerticalAlignment="Center" Width="260"
@@ -31,38 +67,6 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition x:Name="lijeviDio" Width="*" />
-            <ColumnDefinition x:Name="desniDio" Width="*" />
-        </Grid.ColumnDefinitions>
-
-        <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup x:Name="VisualStateGroup">
-                <VisualState x:Name="Phone">
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="0"/>
-                    </VisualState.StateTriggers>
-                </VisualState>
-                <VisualState x:Name="Tablet">
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="700"/>
-                    </VisualState.StateTriggers>
-                    <VisualState.Setters>
-
-                        <Setter Target="lijeviDio.Width" Value="2*"/>
-                        <Setter Target="desniDio.Width" Value="3*"/>
-                    </VisualState.Setters>
-                </VisualState>
-                <VisualState x:Name="Desktop">
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="1000"/>
-                    </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                        <Setter Target="lijeviDio.Width" Value="2*"/>
-                        <Setter Target="desniDio.Width" Value="3*"/>
-                    </VisualState.Setters>
-                </VisualState>
-            </VisualStateGroup>
-        </VisualStateManager.VisualStateGroups>
+        
     </Grid>
 </Page>

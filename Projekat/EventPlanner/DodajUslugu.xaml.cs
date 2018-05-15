@@ -38,7 +38,13 @@ namespace EventPlanner
         {
             if (prva.Text.Length < 3) throw new Exception("nevalidan unos");
             if (druga.Text.Length < 3) throw new Exception("nevalidan unos");
-            if (treca.Text.Length < 3) throw new Exception("nevalidan unos");
+
+            string naziv = prva.Text;
+            int id = Convert.ToInt16(cetvrta.Text);
+            string vrsta = druga.Text;
+            Int16 cijena  = Convert.ToInt16(treca.Text);
+            Usluga u = new Usluga(id, cijena, naziv, vrsta);
+            baza.ListaUsluga.Add(u);
         }
     }
 }

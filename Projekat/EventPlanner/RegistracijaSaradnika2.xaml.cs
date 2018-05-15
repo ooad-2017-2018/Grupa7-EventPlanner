@@ -31,6 +31,11 @@ namespace EventPlanner
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            string naziv1 = naziv.Text;
+            string password1 = pass.Text;
+            string adresa = adres.Text;
+            string br = brkar.Text;
+
             bool nadjeno = false;
             if (naziv.Text.Length < 5) throw new Exception("Nepravilan naziv usluge");
             if (vrsta.Text.Length < 5) throw new Exception("Nepravilna vrsta usluge");
@@ -39,9 +44,14 @@ namespace EventPlanner
                 if (pass.Text == baza.ListaSaradnika[i].Sifra) nadjeno = true;
             }
             if (nadjeno == false) throw new Exception("Nije pronaadjen nijedan uneseni password");
-            if (textbox_KontaktInfo.Text.Length < 6) throw new Exception("Neispravan unos");
-            if (textbox_OVama.Text.Length < 6) throw new Exception("Nesipravan unos");
-            if (adres.Text.Length < 4) throw new Exception("Nesipravan unos");
+            if (brkar.Text.Length < 6) throw new Exception("Neispravan unos");
+            if (vrsta.Text.Length < 6) throw new Exception("Neispravan unos");
+            if (adres.Text.Length < 4) throw new Exception("Neispravan unos");
+
+            Saradnik s = new Saradnik(naziv1, password1, naziv1, br, adresa);
+            baza.ListaSaradnika.Add(s);
+
+                      
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)

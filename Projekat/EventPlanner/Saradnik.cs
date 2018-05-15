@@ -8,9 +8,21 @@ namespace EventPlanner
 {
     public class Saradnik : Korisnik
     {
-        int Idbroj;
-        public int IDbroj { get => Idbroj; set => Idbroj = value; }
+        static int ID = 1;
+        int id;
         List<Usluga> mojeusluge = new List<Usluga>();
+        string adresa;
+
+        public Saradnik(string naziv, string sifra, string korisnickoime, string brojkartice, string adr) : base(naziv, sifra, korisnickoime, brojkartice)
+        {
+            ID++;
+            id = ID;
+            MojeUsluge = new List<Usluga>();
+            Adresa = adr;
+        }
+
         public List<Usluga> MojeUsluge { get => mojeusluge; set => mojeusluge = value; }
+        public int Id { get => id; }
+        public string Adresa { get => adresa; set => adresa = value; }
     }
 }

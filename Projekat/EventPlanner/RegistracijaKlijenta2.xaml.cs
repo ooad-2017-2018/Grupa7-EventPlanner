@@ -31,15 +31,18 @@ namespace EventPlanner
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string ime1 = ime.Text;
-            string prezime1 = prezime.Text;
+            string naziv1 = ime.Text + prezime.Text;
             string password1 = password.Text;
-            if (ime1.Length < 2) throw new Exception("Neispravan unos");
-            if (prezime1.Length < 3) throw new Exception("Neispravan unos");
+            string kor = korime.Text;
+            string br = brkar.Text;
+            if (naziv1.Length < 2) throw new Exception("Neispravan unos");
             if (password1.Length < 5) throw new Exception("Neispravan format sifre");
             if (password1 != novi.Text) throw new Exception("Password i potvrda se razlikuju");
-            if (textbox_KontaktInfo.Text.Length < 10) throw new Exception("Nesipravan format korisnickog imena");
-            if (textbox_OVama.Text.Length < 6) throw new Exception("Neisoravan format broja kreditne kartice");
+            if (korime.Text.Length < 10) throw new Exception("Nesipravan format korisnickog imena");
+            if (brkar.Text.Length < 6) throw new Exception("Neisoravan format broja kreditne kartice");
+
+            Klijent k = new Klijent(naziv1, password1, kor, br);
+            baza.ListaKlijenata.Add(k);
 
         }
 
