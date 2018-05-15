@@ -93,6 +93,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Administrator.cs" />
+    <Compile Include="AdministratorBaza.cs" />
     <Compile Include="AdministratorViewModel.cs" />
     <Compile Include="AdminIzbornik.xaml.cs">
       <DependentUpon>AdminIzbornik.xaml</DependentUpon>
@@ -106,7 +107,7 @@
     <Compile Include="AzuriranjeSaradnika2.xaml.cs">
       <DependentUpon>AzuriranjeSaradnika2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Baza.cs" />
+    <Compile Include="Kontejnerska.cs" />
     <Compile Include="BrisanjeKorisnika2.xaml.cs">
       <DependentUpon>BrisanjeKorisnika2.xaml</DependentUpon>
     </Compile>
@@ -139,6 +140,7 @@
       <DependentUpon>ObrisiUsluguSistem_Svoju.xaml</DependentUpon>
     </Compile>
     <Compile Include="Ponuda.cs" />
+    <Compile Include="PonudaBaza.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegistracijaKlijenta2.xaml.cs">
       <DependentUpon>RegistracijaKlijenta2.xaml</DependentUpon>
@@ -147,8 +149,10 @@
       <DependentUpon>RegistracijaSaradnika2.xaml</DependentUpon>
     </Compile>
     <Compile Include="Rezervacija.cs" />
+    <Compile Include="RezervacijaBaza.cs" />
     <Compile Include="RezervacijaViewModel.cs" />
     <Compile Include="Saradnik.cs" />
+    <Compile Include="SaradnikBaza.cs" />
     <Compile Include="SaradnikViewModel.cs" />
     <Compile Include="SpisakRezervacija.xaml.cs">
       <DependentUpon>SpisakRezervacija.xaml</DependentUpon>

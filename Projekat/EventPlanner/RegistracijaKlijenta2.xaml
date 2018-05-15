@@ -85,8 +85,8 @@
 
             </StackPanel>
 
-            <Button Content="Registruj se!" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="#FFF0B5F9" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5" Click="Button_Click"/>
-            <Button Content="Nazad!" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="#FFF0B5F9" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5" Click="Button_Click_1"/>
+            <Button x:Name="btnSpasi" Content="Registruj se!" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="#FFF0B5F9" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5" Click="Button_Click"/>
+            <Button x:Name="btnNazad" Content="Nazad!" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="#FFF0B5F9" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5" Click="Button_Click_1"/>
         </StackPanel>
 
     </Grid>

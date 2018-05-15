@@ -12,6 +12,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Microsoft.WindowsAzure.MobileServices;
+using Windows.UI.Popups;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -22,8 +24,8 @@ namespace EventPlanner
     /// </summary>
     public sealed partial class DodajUslugu : Page
     {
-        Baza baza;
-        public DodajUslugu(Baza bazica)
+        Kontejnerska baza;
+        public DodajUslugu(Kontejnerska bazica)
         {
             this.InitializeComponent();
             baza = bazica;
@@ -45,6 +47,27 @@ namespace EventPlanner
             Int16 cijena  = Convert.ToInt16(treca.Text);
             Usluga u = new Usluga(id, cijena, naziv, vrsta);
             baza.ListaUsluga.Add(u);
+
+            try
+            {
+                IMobileServiceTable<UslugaBaza> userTableObj = App.MobileService.GetTable<UslugaBaza>();
+
+                UslugaBaza obj = new UslugaBaza();
+                obj.naziv = prva.Text;
+                obj.IDUsluge = obj.IDUsluge;
+                obj.vrsta = druga.Text;
+                obj.IDSaradnika = Convert.ToInt16(cetvrta.Text);
+                obj.cijena = Convert.ToInt32(treca.Text);
+                userTableObj.InsertAsync(obj);
+                MessageDialog msgDialog = new MessageDialog("Uspješno ste unijeli novu uslugu");
+                msgDialog.ShowAsync();
+            }
+            catch (Exception ex)
+            {
+                MessageDialog msgDialogError = new MessageDialog("Error : " + ex.ToString());
+                msgDialogError.ShowAsync();
+            }
+
         }
     }
 }

@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
+using Microsoft.WindowsAzure.MobileServices;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -22,9 +25,14 @@ namespace EventPlanner
     /// </summary>
     public sealed partial class UlazniPage : Page
     {
+        public static Kontejnerska Kontejner = new Kontejnerska();
+        
+        public static UlazniPage ulaz;
+     
         public UlazniPage()
         {
             this.InitializeComponent();
+            ulaz = this;
         }
 
         private void dugmePrijaviSe_Click(object sender, RoutedEventArgs e)
@@ -39,6 +47,7 @@ namespace EventPlanner
 
         private void klijenti_Click(object sender, RoutedEventArgs e)
         {
+            //RegistracijaKlijenta2 rk = new RegistracijaKlijenta2(baza);
             this.Frame.Navigate(typeof(RegistracijaKlijenta2));
         }
     }

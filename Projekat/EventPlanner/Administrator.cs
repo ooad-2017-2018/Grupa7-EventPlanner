@@ -13,33 +13,33 @@ namespace EventPlanner
 
         }
 
-        public void OtkaziRezervaciju(int brojrezervacije, Baza b)
+        public void OtkaziRezervaciju(int brojrezervacije, Kontejnerska b)
         {
            for(int i = 0; i < b.ListaRezervacija.Count(); i++)
             {
                 if (b.ListaRezervacija[i].BrojRezervacije == brojrezervacije) b.ListaRezervacija.Remove(b.ListaRezervacija[i]);
             }
         }
-        public void DodajRezervaciju(Rezervacija rezervacija, Baza b)
+        public void DodajRezervaciju(Rezervacija rezervacija, Kontejnerska b)
         {
             b.ListaRezervacija.Add(rezervacija);
         }
-        public void DodajKlijenta(Klijent klijent, Baza b)
+        public void DodajKlijenta(Klijent klijent, Kontejnerska b)
         {
             b.ListaKlijenata.Add(klijent);
         }
-        public void DodajSaradnika(Saradnik saradnik, Baza b)
+        public void DodajSaradnika(Saradnik saradnik, Kontejnerska b)
         {
             b.ListaSaradnika.Add(saradnik);
         }
-        public void ObrisiKlijenta(string korisnickoime, Baza b)
+        public void ObrisiKlijenta(string korisnickoime, Kontejnerska b)
         {
             for(int i = 0; i < b.ListaKlijenata.Count(); i++)
             {
                 if (b.ListaKlijenata[i].KorisnickoIme == korisnickoime) b.ListaKlijenata.Remove(b.ListaKlijenata[i]);
             }
         }
-        public void ObrisiSaradnika(int id, Baza b)
+        public void ObrisiSaradnika(int id, Kontejnerska b)
         {
             for(int i = 0; i < b.ListaSaradnika.Count(); i++)
             {

@@ -22,8 +22,8 @@ namespace EventPlanner
     /// </summary>
     public sealed partial class AzuriranjeKlijenta2 : Page
     {
-        Baza baza;
-        public AzuriranjeKlijenta2(Baza bazica)
+        Kontejnerska baza;
+        public AzuriranjeKlijenta2(Kontejnerska bazica)
         {
             this.InitializeComponent();
             baza = bazica;

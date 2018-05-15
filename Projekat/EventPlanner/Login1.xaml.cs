@@ -22,8 +22,8 @@ namespace EventPlanner
     /// </summary>
     public sealed partial class Login1 : Page
     {
-        Baza baza;
-        public Login1(Baza bazica)
+        Kontejnerska baza;
+        public Login1(Kontejnerska bazica)
         {
             this.InitializeComponent();
             baza = bazica;

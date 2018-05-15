@@ -22,8 +22,8 @@ namespace EventPlanner
     /// </summary>
     public sealed partial class ObrisiSvojuRezervaciju : Page
     {
-        Baza bazica;
-        public ObrisiSvojuRezervaciju(Baza baza)
+        Kontejnerska bazica;
+        public ObrisiSvojuRezervaciju(Kontejnerska baza)
         {
             this.InitializeComponent();
             bazica = baza;

@@ -6,21 +6,19 @@ using System.Threading.Tasks;
 
 namespace EventPlanner
 {
-    public class UslugaBaza
+    public class RezervacijaBaza
     {
-        public UslugaBaza()
+        public RezervacijaBaza()
         {
             ID++;
-            IDUsluge = ID;
+            IDRezervacije = ID;
         }
 
         static int ID = 1;
 
-        public int IDSaradnika { get; set; }
-        public double cijena { get; set; }
-        public string naziv { get; set; }
+        public int IDRezervacije { get; set; }
+        public DateTime datumRezervacije { get; set; }
         public int IDUsluge { get; set; }
-        public string vrsta { get; set; }
         public string id { get; set; }
     }
 }
