@@ -28,8 +28,7 @@
                     </VisualState.StateTriggers>
                    
                     <VisualState.Setters>
-                        <Setter Target="lijeviDio.Width" Value="2*"/>
-                        <Setter Target="desniDio.Width" Value="3*"/>
+
                     </VisualState.Setters>
                     
                 </VisualState>
@@ -38,8 +37,7 @@
                         <AdaptiveTrigger MinWindowWidth="1000"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="lijeviDio.Width" Value="2*"/>
-                        <Setter Target="desniDio.Width" Value="3*"/>
+          
                     </VisualState.Setters>
                 </VisualState>
             </VisualStateGroup>

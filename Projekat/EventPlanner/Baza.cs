@@ -12,7 +12,7 @@ namespace EventPlanner
         List<Klijent> listaklijenata = new List<Klijent>();
         List<Rezervacija> listarezervacija = new List<Rezervacija>();
         List<Usluga> listausluga = new List<Usluga>();
-        Administrator administrator = new Administrator();
+        Administrator administrator = new Administrator("admin", "123456", "adminic", "123456");
         public List<Usluga> ListaUsluga { get => listausluga; set => listausluga = value; }
         public List<Saradnik> ListaSaradnika { get => listasaradnika; set => listasaradnika = value; }
         public List<Klijent> ListaKlijenata { get => listaklijenata; set => listaklijenata = value; }

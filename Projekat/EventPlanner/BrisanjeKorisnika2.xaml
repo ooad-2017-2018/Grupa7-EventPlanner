@@ -8,40 +8,6 @@
     mc:Ignorable="d">
 
     <Grid x:Name="grid1" Background="White">
-
-        <Grid HorizontalAlignment="Left" Height="Auto" Margin="28,35,0,0" VerticalAlignment="Top" Width="Auto"/>
-        <Button x:Name="dugmetrazi" Content="Trazi" HorizontalAlignment="Center" VerticalAlignment="Center" Width="230"
-                Grid.Row="1" FontSize="30" Height="50"
-                Grid.ColumnSpan="2" FontFamily="Showcard Gothic" Click="dugmetrazi_Click"/>
-        <Button x:Name="dugmepotvrdi" Content="Potvrdi" HorizontalAlignment="Center" VerticalAlignment="Center" Width="230"
-                Grid.Row="2" FontSize="30" Height="50"
-                Grid.ColumnSpan="2" FontFamily="Showcard Gothic" Click="dugmepotvrdi_Click"/>
-        <Button x:Name="dugmeodustani" Content="Odustani" HorizontalAlignment="Center" VerticalAlignment="Center" Width="230"
-                Grid.Row="3" FontSize="30" Height="50"
-                Grid.ColumnSpan="2" FontFamily="Showcard Gothic" Click="dugmeodustani_Click"/>
-        <TextBlock x:Name="textBlockKreditna" HorizontalAlignment="Right" Margin="15,15,30,15" Text="broj kreditne kartice:" TextWrapping="Wrap" VerticalAlignment="Bottom" FontFamily="Showcard Gothic"
-                   Grid.Row="0" FontSize="25"/>
-       
-        <TextBox x:Name="textBoxus" Grid.Column="1"  HorizontalAlignment="Left" Margin="5,15,15,15" Grid.Row="0" Text=""
-                 VerticalAlignment="Bottom" Width="150"/>
-      
-
-        <TextBlock x:Name="textBloc" HorizontalAlignment="Center" Margin="15,15,30,15" TextWrapping="Wrap" VerticalAlignment="Center"
-                   Grid.Row="0" Grid.Column="0" FontSize="30" Text="brisi" FontFamily="Showcard Gothic"
-                  />
-        <Grid.RowDefinitions>
-            <RowDefinition Height="3*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition x:Name="lijeviDio" Width="*" />
-            <ColumnDefinition x:Name="desniDio" Width="*" />
-        </Grid.ColumnDefinitions>
-
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroup x:Name="VisualStateGroup">
                 <VisualState x:Name="Phone">
@@ -79,6 +45,40 @@
                 </VisualState>
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
+        <Grid HorizontalAlignment="Left" Height="Auto" Margin="28,35,0,0" VerticalAlignment="Top" Width="Auto"/>
+        <Button x:Name="dugmetrazi" Content="Trazi" HorizontalAlignment="Center" VerticalAlignment="Center" Width="230"
+                Grid.Row="1" FontSize="30" Height="50"
+                Grid.ColumnSpan="2" FontFamily="Showcard Gothic" Click="dugmetrazi_Click"/>
+        <Button x:Name="dugmepotvrdi" Content="Potvrdi" HorizontalAlignment="Center" VerticalAlignment="Center" Width="230"
+                Grid.Row="2" FontSize="30" Height="50"
+                Grid.ColumnSpan="2" FontFamily="Showcard Gothic" Click="dugmepotvrdi_Click"/>
+        <Button x:Name="dugmeodustani" Content="Odustani" HorizontalAlignment="Center" VerticalAlignment="Center" Width="230"
+                Grid.Row="3" FontSize="30" Height="50"
+                Grid.ColumnSpan="2" FontFamily="Showcard Gothic" Click="dugmeodustani_Click"/>
+        <TextBlock x:Name="textBlockKreditna" HorizontalAlignment="Right" Margin="15,15,30,15" Text="broj kreditne kartice:" TextWrapping="Wrap" VerticalAlignment="Bottom" FontFamily="Showcard Gothic"
+                   Grid.Row="0" FontSize="25"/>
+       
+        <TextBox x:Name="textBoxus" Grid.Column="1"  HorizontalAlignment="Left" Margin="5,15,15,15" Grid.Row="0" Text=""
+                 VerticalAlignment="Bottom" Width="150"/>
+      
+
+        <TextBlock x:Name="textBloc" HorizontalAlignment="Center" Margin="15,15,30,15" TextWrapping="Wrap" VerticalAlignment="Center"
+                   Grid.Row="0" Grid.Column="0" FontSize="30" Text="brisi" FontFamily="Showcard Gothic"
+                  />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Name="lijeviDio" Width="*" />
+            <ColumnDefinition x:Name="desniDio" Width="*" />
+        </Grid.ColumnDefinitions>
+
+  
     </Grid>
 
 </Page>

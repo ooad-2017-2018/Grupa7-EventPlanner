@@ -15,8 +15,8 @@ namespace EventPlanner
         }
 
         public string Naziv { get { return usluga.Naziv; } set { usluga.Naziv = value; } }
-        public int IDusluge { get { return usluga.IDusluge; } set { usluga.IDusluge = value; } }
-        public int IDsaradnika { get { return usluga.IDsaradnika; } set { usluga.IDsaradnika = value; } }
+        public int IDusluge { get { return usluga.IDusluge; } }
+        public int IDsaradnika { get { return usluga.IDsaradnika; } }
         public double Cijena { get { return usluga.Cijena; } set { usluga.Cijena = value; } }
         public Usluga Usluga { get { return usluga; } }
     }

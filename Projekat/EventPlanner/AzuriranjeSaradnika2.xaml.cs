@@ -36,7 +36,7 @@ namespace EventPlanner
             if (druga.Text.Length < 5) throw new Exception("Prekratka vrsta");
             for(int i = 0; i < baza.ListaSaradnika.Count(); i++)
             {
-                if (treca.Text == baza.ListaSaradnika[i].IDbroj.ToString()) nadjeno = true;
+                if (treca.Text == baza.ListaSaradnika[i].Id.ToString()) nadjeno = true;
             }
             if (nadjeno == false) throw new Exception("Nepostojeci password saradnika");
             if (cetvrta.Text.Length < 5) throw new Exception("Prekratka adresa");
