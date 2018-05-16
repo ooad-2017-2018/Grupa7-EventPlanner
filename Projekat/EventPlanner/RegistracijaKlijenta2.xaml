@@ -5,89 +5,57 @@
     xmlns:local="using:EventPlanner"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d" Height="620.508" Width="606.904">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Name ="grd" 
+        Background="FloralWhite">
 
-        <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup x:Name="VisualStateGroup">
-                <VisualState x:Name="Phone">
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="0"/>
-                    </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                        <Setter Target="StekUnosGlavni.Orientation" Value="Vertical"/>
-                        <Setter Target="StekGlavni.Width" Value="500"/>
-                        <Setter Target="StekUnosGlavni.Width" Value="500"/>
-                        <Setter Target="StekUnos1.Width" Value="350"/>
-                        <Setter Target="StekUnos2.Width" Value="350"/>
-                        <Setter Target="textbox_OVama.Height" Value="40"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="141*" />
+            <RowDefinition Height="47*" />
+            <RowDefinition Height="47*" />
+            <RowDefinition Height="47*" />
+            <RowDefinition Height="47*" />
+            <RowDefinition Height="47*" />
+            <RowDefinition Height="104*" />
+            <RowDefinition Height="84*" />
+            <RowDefinition Height="57*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
 
-                    </VisualState.Setters>
-                </VisualState>
-                <VisualState x:Name="Tablet">
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="700"/>
-                    </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                        <Setter Target="StekUnosGlavni.Orientation" Value="Horizontal"/>
-                        <Setter Target="StekUnos1.Width" Value="350"/>
-                        <Setter Target="StekUnos2.Width" Value="350"/>
-                    </VisualState.Setters>
-                </VisualState>
-                <VisualState x:Name="Desktop">
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="1000"/>
-                    </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                        <Setter Target="StekUnosGlavni.Orientation" Value="Horizontal"/>
-                        <Setter Target="StekUnos1.Width" Value="500"/>
-                        <Setter Target="StekUnos2.Width" Value="500"/>
-                    </VisualState.Setters>
-                </VisualState>
-            </VisualStateGroup>
-        </VisualStateManager.VisualStateGroups>
-
-        <StackPanel x:Name="StekGlavni" HorizontalAlignment="Left" Orientation="Vertical" VerticalAlignment="Top" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
-
-            <TextBlock Text="Event Planner" TextWrapping="Wrap" HorizontalAlignment="Center" TextAlignment="Left" FontSize="65" FontFamily="Showcard Gothic" Foreground="#FFF0B5F9"/>
-
-            <StackPanel x:Name="StekRadio" HorizontalAlignment="Center" VerticalAlignment="Top" Orientation="Horizontal">
+        <TextBlock Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.ColumnSpan="2"
+                   Margin="211,20,210,0" Text="Unesite podatke:" FontSize="20" Foreground="#FF2D93C3" Height="33" Width="186" FontFamily="Showcard Gothic"/>
+        <TextBox x:Name="textBoxIme" HorizontalAlignment="Right" Margin="0,97,5,0" PlaceholderText="Ime" VerticalAlignment="Top"
+                 Width="130" FontSize="20" Height="39" Foreground="Black" BorderBrush="#FF2D93C3" FontFamily="Showcard Gothic" />
+        <TextBox x:Name="textBoxPrezime" HorizontalAlignment="Left" Margin="5,0,0,5" PlaceholderText="Prezime" VerticalAlignment="Bottom"
+                 Width="130" FontSize="20" Grid.Row="0" Grid.Column="1" Height="39" BorderBrush="#FF2D93C3" FontFamily="Showcard Gothic"/>
+        <TextBox x:Name="textBoxKorisnickoIme" HorizontalAlignment="Center" Margin="169,5,168,5" PlaceholderText="Korisnicko ime" 
+                 VerticalAlignment="Center" Width="270" FontSize="20" Grid.Row="1" Grid.ColumnSpan="2" Height="37" BorderBrush="#FF2D93C3" FontFamily="Showcard Gothic"/>
+        <PasswordBox x:Name="passwordBoxSifra" HorizontalAlignment="Center" Margin="169,5,168,5" PlaceholderText="Password" 
+                 PasswordChar="*" VerticalAlignment="Center" Width="270" FontSize="20" Grid.Row="2" Grid.ColumnSpan="2" Height="37" BorderBrush="#FF2D93C3" FontFamily="Showcard Gothic"/>
+        <PasswordBox x:Name="passwordBoxPotvrdaSifre" HorizontalAlignment="Center" Margin="169,5,168,5" PlaceholderText="Ponovite password" 
+                 PasswordChar="*" VerticalAlignment="Center" Width="270" FontSize="20" Grid.Row="3" Grid.ColumnSpan="2" Height="37" BorderBrush="#FF2D93C3" FontFamily="Showcard Gothic"/>
+        <TextBox x:Name="textBoxBrojKartice" HorizontalAlignment="Center" Margin="169,5,168,5" PlaceholderText="Broj kreditne kartice" 
+                 VerticalAlignment="Center" Width="270" FontSize="20" Grid.Row="4" Grid.ColumnSpan="2" Height="37" BorderBrush="#FF2D93C3" FontFamily="Showcard Gothic"/>
+        <TextBlock x:Name="labelDatumIsteka" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="212,0,211,7" Grid.Row="5" Text="Datum isteka kartice:" 
+                   VerticalAlignment="Bottom" FontSize="15" Height="27" Width="184" Foreground="#FF2D93C3" FontFamily="Showcard Gothic"/>
+        
+        <DatePicker x:Name="datePicker" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="156,7,155,0" Grid.Row="6" VerticalAlignment="Top" Height="32" Width="296" Foreground="#FF494747" FontFamily="Showcard Gothic"/>
 
 
+        <Button x:Name="buttonRegistrujSe" Content="Registruj se" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="189,22,188,18" Grid.Row="7"
+                VerticalAlignment="Center" Width="230" FontSize="24" Click="button1_Click" Height="44" Background="#33EC11E2" FontFamily="Showcard Gothic" Foreground="#FF2D93C3"/>
+        <StackPanel Grid.ColumnSpan="2" HorizontalAlignment="Center" Height="40" Margin="169,34,168,30" Grid.Row="6" VerticalAlignment="Center"
+                    Orientation="Horizontal" Width="270">
 
-            </StackPanel>
-
-            <StackPanel x:Name="StekUnosGlavni" HorizontalAlignment="Center" VerticalAlignment="Top" Orientation="Horizontal">
-
-                <StackPanel x:Name="StekUnos1" VerticalAlignment="Top" HorizontalAlignment="Center" Orientation="Vertical">
-
-                    <TextBlock Text="Ime" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5"/>
-                    <TextBox x:Name="ime" Text="" Margin="10, 0, 10, 15" TextChanged="ime_TextChanged"/>
-                    <TextBlock Text="Password" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5"/>
-                    <TextBox x:Name="password" Text="" Margin="10, 0, 10, 15"/>
-                    <TextBlock Text="Ponovite password" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5"/>
-                    <TextBox x:Name="novi" Text="" Margin="10, 0, 10, 15"/>
-
-
-                </StackPanel>
-
-                <StackPanel x:Name="StekUnos2" VerticalAlignment="Top" HorizontalAlignment="Center" Orientation="Vertical">
-
-                    <TextBlock Text="Prezime" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5"/>
-                    <TextBox x:Name="prezime" Text="" Margin="10, 0, 10, 15"/>
-                    <TextBlock x:Name="Email" Text="Korisnicko ime" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5"/>
-                    <TextBox x:Name="korime" Text="" Margin="10, 0, 10, 15"/>
-                    <TextBlock x:Name="text_KontaktInfo" Text="Broj kreditne kartice" TextWrapping="Wrap" HorizontalAlignment="Left" TextAlignment="Left" Margin="10, 10, 10, 5" FontFamily="Showcard Gothic" Foreground="#FF33ECB9"/>
-                    <TextBox x:Name="brkar" Text="" Margin="10, 0, 10, 15"/>
-
-                </StackPanel>
-
-            </StackPanel>
-
-            <Button x:Name="btnSpasi" Content="Registruj se!" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="#FFF0B5F9" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5" Click="Button_Click"/>
-            <Button x:Name="btnNazad" Content="Nazad!" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="#FFF0B5F9" FontFamily="Showcard Gothic" Foreground="#FF6AF9C5" Click="Button_Click_1"/>
         </StackPanel>
+        <TextBlock Grid.Column="1" Grid.Row="7" x:Name="Greska" Foreground="Red" Margin="0,0,303,5" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontWeight="Bold" Height="20" Width="0"/>
+        <Button Grid.Column="0" Grid.Row="8" HorizontalAlignment="Left" VerticalAlignment="Center" Width="160" Margin="15,10,0,10"
+                Height="37" Content="Nazad" FontSize="22" Padding="0" Background="LightPink" Click="Button_Click" Foreground="#FF2D93C3" FontFamily="Showcard Gothic"/>
+
 
     </Grid>
 

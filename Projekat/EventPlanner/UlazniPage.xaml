@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid x:Name="grid1" Background="AntiqueWhite">
+    <Grid x:Name="grid1" Background="FloralWhite">
        
         
         <Grid.ColumnDefinitions>
@@ -46,15 +46,15 @@
         <Grid HorizontalAlignment="Left" Height="Auto" Margin="28,35,0,0" VerticalAlignment="Top" Width="Auto"/>
         <Button x:Name="dugmePrijaviSe" Content="saradnik-registracija" HorizontalAlignment="Center" VerticalAlignment="Center" Width="260"
                 Grid.Row="3" FontSize="20" Height="50"
-                Grid.ColumnSpan="2" Click="dugmePrijaviSe_Click" FontFamily="Showcard Gothic"/>
+                Grid.ColumnSpan="2" Click="dugmePrijaviSe_Click" FontFamily="Showcard Gothic" Foreground="#FFDE199F" Background="#3328EAD8" BorderBrush="#FF0E36A0"/>
         <Button x:Name="prijavi" Content="prijavi se" HorizontalAlignment="Center" VerticalAlignment="Center" Width="275"
-                Grid.Row="1" FontSize="30" Height="50"
-                Grid.ColumnSpan="2" FontFamily="Showcard Gothic" Click="prijavi_Click"/>
+                Grid.Row="1" FontSize="20" Height="50"
+                Grid.ColumnSpan="2" FontFamily="Showcard Gothic" Click="prijavi_Click" Foreground="#FFDE199F" Background="#3328EAD8" BorderBrush="#FF0E36A0"/>
         <Button x:Name="klijenti" Content="klijent-registracija " HorizontalAlignment="Center" VerticalAlignment="Center" Width="260"
                 Grid.Row="2" FontSize="20" Height="50"
-                Grid.ColumnSpan="2" FontFamily="Showcard Gothic" Click="klijenti_Click"/>
+                Grid.ColumnSpan="2" FontFamily="Showcard Gothic" Click="klijenti_Click" Foreground="#FFDE199F" Background="#3328EAD8" BorderBrush="#FF0E36A0"/>
         <TextBlock x:Name="textBloc" HorizontalAlignment="Center" Margin="15,15,30,15" TextWrapping="Wrap" VerticalAlignment="Center"
-                   Grid.Row="0" Grid.Column="0" FontSize="35" Text="Dobrodošli" FontFamily="Showcard Gothic"
+                   Grid.Row="0" Grid.Column="0" FontSize="23" Text="EventPlanner" FontFamily="Showcard Gothic" Foreground="#FFDE199F"
                   />
        
         <Grid.RowDefinitions>
