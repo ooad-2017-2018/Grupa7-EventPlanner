@@ -54,13 +54,7 @@
                         <AdaptiveTrigger MinWindowWidth="700"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="textBoxus.Width" Value="300"/>
-                        <Setter Target="password.Width" Value="300"/>
-                        <Setter Target="dugmePrijavi.Width" Value="300"/>
-                        <Setter Target="textBlock.FontSize" Value="22"/>
-                        <Setter Target="textBlockLoz.FontSize" Value="22"/>
-                        <Setter Target="textBoxus.FontSize" Value="22"/>
-                        <Setter Target="password.FontSize" Value="22"/>
+                     
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState x:Name="Desktop">
@@ -68,13 +62,7 @@
                         <AdaptiveTrigger MinWindowWidth="1000"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="textBoxus.Width" Value="400"/>
-                        <Setter Target="password.Width" Value="400"/>
-                        <Setter Target="dugmePrijavi.Width" Value="400"/>
-                        <Setter Target="textBlock.FontSize" Value="24"/>
-                        <Setter Target="textBlockLoz.FontSize" Value="24"/>
-                        <Setter Target="textBoxus.FontSize" Value="24"/>
-                        <Setter Target="password.FontSize" Value="24"/>
+                    
                     </VisualState.Setters>
                 </VisualState>
             </VisualStateGroup>
