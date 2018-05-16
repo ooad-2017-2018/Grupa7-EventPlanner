@@ -7,24 +7,24 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid x:Name="grid1" Background="AntiqueWhite">
+    <Grid x:Name="grid1" Background="LightYellow">
 
         <Grid HorizontalAlignment="Left" Height="Auto" Margin="28,35,0,0" VerticalAlignment="Top" Width="Auto"/>
         <Button x:Name="dugmePrijaviSe" Content="vjencanje" HorizontalAlignment="Center" VerticalAlignment="Center" Width="240"
                 Grid.Row="3" FontSize="30" Height="50"
-                Grid.ColumnSpan="2" FontFamily="Showcard Gothic" Click="dugmePrijaviSe_Click"/>
+                Grid.ColumnSpan="2" FontFamily="Showcard Gothic" Click="dugmePrijaviSe_Click" Background="#3329E8DF" Foreground="#FF0E16C7"/>
         <Button x:Name="dugmeazuriraj" Content="rodjendan" HorizontalAlignment="Center" VerticalAlignment="Center" Width="275"
                 Grid.Row="1" FontSize="30" Height="50"
-                Grid.ColumnSpan="2" FontFamily="Showcard Gothic" Click="dugmeazuriraj_Click"/>
+                Grid.ColumnSpan="2" FontFamily="Showcard Gothic" Click="dugmeazuriraj_Click" Background="#331FD3AA" Foreground="#FF991286"/>
         <Button x:Name="dugmeizlaz" Content="izlaz " HorizontalAlignment="Center" VerticalAlignment="Center" Width="230"
                 Grid.Row="4" FontSize="30" Height="50"
-                Grid.ColumnSpan="2"  FontFamily="Showcard Gothic" Click="dugmeizlaz_Click"/>
+                Grid.ColumnSpan="2"  FontFamily="Showcard Gothic" Click="dugmeizlaz_Click" Background="#33000000" Foreground="#FFFBF8F8"/>
         <Button x:Name="dugmeobrisi" Content="djevojacko vece " HorizontalAlignment="Center" VerticalAlignment="Center" Width="280"
                 Grid.Row="2" FontSize="30" Height="50"
-                Grid.ColumnSpan="2" FontFamily="Showcard Gothic" Click="dugmeobrisi_Click"/>
+                Grid.ColumnSpan="2" FontFamily="Showcard Gothic" Click="dugmeobrisi_Click" Background="#33C407CD" Foreground="#FFE01140"/>
         <Button x:Name="dugme" Content="momacko vece " HorizontalAlignment="Center" VerticalAlignment="Center" Width="260"
                 Grid.Row="0" FontSize="30" Height="50"
-                Grid.ColumnSpan="2" FontFamily="Showcard Gothic" Click="dugme_Click"/>
+                Grid.ColumnSpan="2" FontFamily="Showcard Gothic" Click="dugme_Click" Background="#333F10BF" Foreground="#FF10A7AE"/>
 
         <Grid.RowDefinitions>
 

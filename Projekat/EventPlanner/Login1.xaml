@@ -6,24 +6,24 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-    <Grid x:Name="grid1" Background="White">
+    <Grid x:Name="grid1" Background="FloralWhite">
 
         <Grid HorizontalAlignment="Left" Height="Auto" Margin="28,35,0,0" VerticalAlignment="Top" Width="Auto"/>
         <Button x:Name="dugmePrijavi" Content="Prijavi se" HorizontalAlignment="Center" VerticalAlignment="Center" Width="230"
                 Grid.Row="2" FontSize="30" Height="50"
-                Grid.ColumnSpan="2" Click="dugmePrijaviSe_Click" FontFamily="Showcard Gothic"/>
+                Grid.ColumnSpan="2" Click="dugmePrijaviSe_Click" FontFamily="Showcard Gothic" Foreground="#FF1446CD" Background="#3321E8C4" BorderBrush="#FF1818CB"/>
         <TextBlock x:Name="textBlockLoz" HorizontalAlignment="Right" Margin="15,15,30,15" Text="Password:" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Showcard Gothic"
-                   Grid.Row="1" FontSize="20"/>
+                   Grid.Row="1" FontSize="20" Foreground="#FFE41515"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Right" Margin="15,15,30,15" TextWrapping="Wrap" VerticalAlignment="Bottom"
-                   Grid.Row="0" Grid.Column="0" FontSize="20" Text="username:" FontFamily="Showcard Gothic"
+                   Grid.Row="0" Grid.Column="0" FontSize="20" Text="username:" FontFamily="Showcard Gothic" Foreground="#FFE41515"
                   />
         <TextBox x:Name="textBoxus" Grid.Column="1"  HorizontalAlignment="Left" Margin="5,15,15,15" Grid.Row="0" Text=""
-                 VerticalAlignment="Bottom" Width="150"/>
+                 VerticalAlignment="Bottom" Width="150" BorderBrush="#FF1446CD"/>
         <TextBox x:Name="password" Grid.Column="1"  HorizontalAlignment="Left" Margin="5,15,15,15" Grid.Row="1" Text=""
-                 VerticalAlignment="Top" Width="150"/>
+                 VerticalAlignment="Top" Width="150" BorderBrush="#FF1446CD"/>
 
         <TextBlock x:Name="textBloc" HorizontalAlignment="Center" Margin="15,15,30,15" TextWrapping="Wrap" VerticalAlignment="Center"
-                   Grid.Row="0" Grid.Column="0" FontSize="30" Text="prijava" FontFamily="Showcard Gothic"
+                   Grid.Row="0" Grid.Column="0" FontSize="30" Text="prijava" FontFamily="Showcard Gothic" Foreground="#FF1446CD"
                   />
         <Grid.RowDefinitions>
             <RowDefinition Height="3*" />

@@ -93,7 +93,7 @@ namespace EventPlanner
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(IzbornikKorisnika));
+            this.Frame.Navigate(typeof(UlazniPage));
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -128,6 +128,7 @@ namespace EventPlanner
                 userTableObj.InsertAsync(obj);
                 MessageDialog msgDialog = new MessageDialog("Uspješno ste unijeli novog klijenta");
                 msgDialog.ShowAsync();
+                this.Frame.Navigate(typeof(IzbornikKorisnika));
             }
             catch (Exception ex)
             {
