@@ -22,9 +22,11 @@ namespace EventPlanner
     /// </summary>
     public sealed partial class VrstaEventa : Page
     {
+        public static VrstaEventa ulaz;
         public VrstaEventa()
         {
             this.InitializeComponent();
+            ulaz = this;
         }
 
         private void dugmeizlaz_Click(object sender, RoutedEventArgs e)
@@ -44,7 +46,7 @@ namespace EventPlanner
 
         private void dugmeazuriraj_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(VrstaEventa));
+            this.Frame.Navigate(typeof(RodjendanObjekti));
         }
 
         private void dugme_Click(object sender, RoutedEventArgs e)

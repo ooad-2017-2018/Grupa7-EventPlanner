@@ -3,11 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
-using System.Threading.Tasks;
-using Microsoft.WindowsAzure.MobileServices;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
-using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -23,31 +20,18 @@ namespace EventPlanner
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class UlazniPage : Page
+    public sealed partial class RodjendanObjekti : Page
     {
-        public static Kontejnerska Kontejner = new Kontejnerska();
-        
-        public static UlazniPage ulaz;
-     
-        public UlazniPage()
+        public static RodjendanObjekti ulaz;
+        public RodjendanObjekti()
         {
             this.InitializeComponent();
             ulaz = this;
         }
 
-        private void dugmePrijaviSe_Click(object sender, RoutedEventArgs e)
+        private void buttonVise1_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(RegistracijaSaradnika2));
-        }
-
-        private void prijavi_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(Login1));
-        }
-
-        private void klijenti_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(RegistracijaKlijenta2));
+            this.Frame.Navigate(typeof(Igraonica));
         }
     }
 }

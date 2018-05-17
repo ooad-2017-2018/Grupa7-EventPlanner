@@ -107,6 +107,9 @@
     <Compile Include="AzuriranjeSaradnika2.xaml.cs">
       <DependentUpon>AzuriranjeSaradnika2.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Igraonica.xaml.cs">
+      <DependentUpon>Igraonica.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Kontejnerska.cs" />
     <Compile Include="BrisanjeKorisnika2.xaml.cs">
       <DependentUpon>BrisanjeKorisnika2.xaml</DependentUpon>
@@ -151,6 +154,9 @@
     <Compile Include="Rezervacija.cs" />
     <Compile Include="RezervacijaBaza.cs" />
     <Compile Include="RezervacijaViewModel.cs" />
+    <Compile Include="RodjendanObjekti.xaml.cs">
+      <DependentUpon>RodjendanObjekti.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Saradnik.cs" />
     <Compile Include="SaradnikBaza.cs" />
     <Compile Include="SaradnikViewModel.cs" />
@@ -174,6 +180,9 @@
     <None Include="EventPlanner_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\cinemaCity.jpg" />
+    <Content Include="Assets\igraonicaHump.jpg" />
+    <Content Include="Assets\igraonicaKvaKva.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -197,6 +206,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AzuriranjeSaradnika2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Igraonica.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -241,6 +254,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="RegistracijaSaradnika2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RodjendanObjekti.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

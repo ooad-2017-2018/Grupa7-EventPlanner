@@ -1,0 +1,62 @@
+﻿<Page
+    x:Class="EventPlanner.RodjendanObjekti"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:EventPlanner"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="FloralWhite" RenderTransformOrigin="0.47,0.487">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*" />
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="0.5*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+
+        <Rectangle x:Name="slika1" Width="120" Height="150" Grid.Row="1" Grid.Column="0">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Assets/igraonicaKvaKva.jpg" Stretch="Fill" >
+                </ImageBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <TextBlock x:Name="labelaIgraonica1" Grid.Column="1" HorizontalAlignment="Left" Margin="30,20,0,0" Text="Igraonica Kva-kva" Width="184" Foreground="#FFD40B0B" FontFamily="Showcard Gothic" Grid.Row="1" FontSize="18"/>
+
+        <Button x:Name="buttonVise1" Content="Vise..." Grid.Column="1" HorizontalAlignment="Left" Height="35" Margin="30,116,-145,-151" Grid.Row="1" VerticalAlignment="Top" Width="115" Grid.RowSpan="4" Background="#33D8E210" FontFamily="Showcard Gothic" Foreground="#FFBD0707" BorderBrush="#FFBD0707" Click="buttonVise1_Click"/>
+        <TextBlock x:Name="labelaOcjena1" Grid.Column="1" HorizontalAlignment="Left" Height="22" Margin="32,67,-124,-89" Grid.Row="1" Text="Ocjena: 4.8" TextWrapping="Wrap" VerticalAlignment="Top" Width="92" Grid.RowSpan="4" Foreground="#FFBD0707" FontFamily="Arial Rounded MT Bold" FontWeight="Bold"/>
+        <TextBlock x:Name="labelaVrsta" Grid.Column="1" HorizontalAlignment="Left" Height="34" Margin="12,22,-227,-56" Text="Rodjendani" TextWrapping="Wrap" VerticalAlignment="Top" Width="215" Foreground="#FF0E2D97" FontFamily="Showcard Gothic" FontSize="28" Grid.RowSpan="5"/>
+
+        <Rectangle x:Name="slika2" Width="120" Height="150" Grid.Row="2" Grid.Column="0">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Assets/igraonicaHump.jpg" Stretch="Fill" >
+                </ImageBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBlock x:Name="labelaCijena1" Grid.Column="1" HorizontalAlignment="Left" Height="18" Margin="152,67,-215,-85" Grid.Row="1" Text="120KM" TextWrapping="Wrap" VerticalAlignment="Top" Width="63" Grid.RowSpan="4" Foreground="#FFBD0707" FontFamily="Arial Rounded MT Bold" FontWeight="Bold"/>
+        <TextBlock x:Name="labelaIgraonica2" Grid.Column="1" HorizontalAlignment="Left" Height="32" Margin="30,20,0,0" Grid.Row="2" Text="Igraonica Hump" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" FontFamily="Showcard Gothic" FontSize="18" Foreground="#FFD40B0B"/>
+        <Button x:Name="buttonVise2" Content="Vise..." Grid.Column="1" HorizontalAlignment="Left" Height="35" Margin="30,116,-145,-151" Grid.Row="2" VerticalAlignment="Top" Width="115" Background="#33D8E210" FontFamily="Showcard Gothic" Foreground="#FFBD0707" BorderBrush="#FFBD0707"/>
+        <TextBlock x:Name="labelaOcjena2" Grid.Column="1" HorizontalAlignment="Left" Height="22" Margin="32,67,-124,-89" Grid.Row="2" Text="Ocjena: 4.7" TextWrapping="Wrap" VerticalAlignment="Top" Width="92" Foreground="#FFBD0707" FontFamily="Arial Rounded MT Bold" FontWeight="Bold"/>
+        <TextBlock x:Name="labelaCijena2" Grid.Column="1" HorizontalAlignment="Left" Height="18" Margin="152,67,-215,-85" Grid.Row="2" Text="150KM" TextWrapping="Wrap" VerticalAlignment="Top" Width="63" Foreground="#FFBD0707" FontFamily="Arial Rounded MT Bold" FontWeight="Bold"/>
+
+        <Rectangle x:Name="slika3" Width="120" Height="150" Grid.Row="3" Grid.Column="0">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Assets/cinemaCity.jpg" Stretch="Fill" >
+                </ImageBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Height="32" Margin="30,20,0,0" Grid.Row="3" Text="Cinema city" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" FontFamily="Showcard Gothic" FontSize="18" Foreground="#FFD40B0B"/>
+        <TextBlock x:Name="labelaCijena3" Grid.Column="1" HorizontalAlignment="Left" Height="18" Margin="152,67,-215,-85" Grid.Row="3" Text="150KM" TextWrapping="Wrap" VerticalAlignment="Top" Width="63" Foreground="#FFBD0707" FontFamily="Arial Rounded MT Bold" FontWeight="Bold"/>
+        <TextBlock x:Name="labelaOcjena3" Grid.Column="1" HorizontalAlignment="Left" Height="22" Margin="32,67,-124,-89" Grid.Row="3" Text="Ocjena: 4.4" TextWrapping="Wrap" VerticalAlignment="Top" Width="92" Foreground="#FFBD0707" FontFamily="Arial Rounded MT Bold" FontWeight="Bold"/>
+        <Button x:Name="buttonVise3" Content="Vise..." Grid.Column="1" HorizontalAlignment="Left" Height="35" Margin="30,116,-145,-151" Grid.Row="3" VerticalAlignment="Top" Width="115" Background="#33D8E210" FontFamily="Showcard Gothic" Foreground="#FFBD0707" BorderBrush="#FFBD0707"/>
+
+    </Grid>
+</Page>

@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="EventPlanner.Igraonica"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:EventPlanner"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="SkyBlue">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.3*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="0.3*" />
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="labelaIme" HorizontalAlignment="Center" Height="39" Margin="4,0,3,20" Text="Igraonica Kva-kva" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="317" FontFamily="Showcard Gothic" Foreground="#FFEDF1BC" FontSize="30"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="20,10,0,0" Grid.Row="2" Text="Top ponuda!!!" TextWrapping="Wrap" VerticalAlignment="Top" Width="233" Foreground="#FF0D0DC1" FontFamily="Showcard Gothic" TextDecorations="Underline"/>
+
+        <Rectangle x:Name="slika1" Width="120" Height="150" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" Margin="20">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Assets/igraonicaKvaKva.jpg" Stretch="Fill" >
+                </ImageBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBlock x:Name="labelaOpis" Margin="200,100,20,20" Grid.Row="1" Grid.Column="0" Text="Najbolja zabava u gradu za djecu od 0 do 14 godina! Rodjendani, igraonica, disco party i ostale zabave po dogovoru - ispunjavamo Vase zelje!" TextWrapping="Wrap" IsHitTestVisible="False" FontFamily="Showcard Gothic" Foreground="#FF0D0DC1"/>
+        <TextBlock Margin="30,60,30,30" Grid.Row="2" Text="Top ponuda obuhvata: 2 sata zabave za 15-tero djece zatvorenog tipa; sokice za djecu; slane grickalice; slatke zalogajcice; pizza; dekoraciju prostora; razne takmicarske igre; mini disco; muziku po izboru i zelji slavljenika; dvije animatorice po cijeni od 120KM!" TextWrapping="Wrap" Foreground="#FFEDF1BC" FontFamily="Showcard Gothic"/>
+        <Button Content="Rezervisi!" HorizontalAlignment="Stretch" Margin="240,10,20,24" Grid.Row="3" VerticalAlignment="Stretch" Foreground="#FFEDF1BC" FontFamily="Showcard Gothic" BorderBrush="#FF121E9C"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="30,10,0,0" Grid.Row="3" Text="120KM" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Foreground="#FF0D0DC1" FontFamily="Showcard Gothic" FontSize="30"/>
+
+    </Grid>
+</Page>

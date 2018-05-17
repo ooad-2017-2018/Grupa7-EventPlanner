@@ -25784,11 +25784,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ilusi\\Desktop\\projekt\\Projekat\\EventPlanner\\EventPlanner.csproj",
+      "projectUniqueName": "C:\\Users\\ilusi\\Desktop\\Projekat\\Projekat\\EventPlanner\\EventPlanner.csproj",
       "projectName": "EventPlanner",
-      "projectPath": "C:\\Users\\ilusi\\Desktop\\projekt\\Projekat\\EventPlanner\\EventPlanner.csproj",
+      "projectPath": "C:\\Users\\ilusi\\Desktop\\Projekat\\Projekat\\EventPlanner\\EventPlanner.csproj",
       "packagesPath": "C:\\Users\\ilusi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ilusi\\Desktop\\projekt\\Projekat\\EventPlanner\\obj\\",
+      "outputPath": "C:\\Users\\ilusi\\Desktop\\Projekat\\Projekat\\EventPlanner\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

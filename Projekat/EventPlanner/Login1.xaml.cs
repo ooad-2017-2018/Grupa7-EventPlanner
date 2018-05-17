@@ -22,11 +22,15 @@ namespace EventPlanner
     /// </summary>
     public sealed partial class Login1 : Page
     {
-        Kontejnerska baza;
-        public Login1(Kontejnerska bazica)
+        Kontejnerska baza = new Kontejnerska();
+        public static Login1 ulaz;
+
+        public Login1()
         {
             this.InitializeComponent();
-            baza = bazica;
+            ulaz = this;
+            Klijent k = new Klijent("Amina", "ovcica", "ovcica", "123456789");
+            baza.ListaKlijenata.Add(k);
         }
         private void dugmePrijaviSe_Click(object sender, RoutedEventArgs e)
         {
