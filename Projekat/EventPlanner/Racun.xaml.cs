@@ -20,11 +20,18 @@ namespace EventPlanner
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class SpisakRezervacija : Page
+    public sealed partial class Racun : Page
     {
-        public SpisakRezervacija()
+        public static Racun racun;
+        public Racun()
         {
             this.InitializeComponent();
+            racun = this;
+        }
+
+        private void Zatvori_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

@@ -1,0 +1,78 @@
+﻿<Page
+    x:Class="EventPlanner.IzborDodataka"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:EventPlanner"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#FFB0E4BE">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.6*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"
+                   Margin="5"  Text="Odabir dodataka" FontSize="22" FontFamily="Showcard Gothic"/>
+
+        <Button Grid.Row="6" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"
+                Margin="10" Name="SearchButton" Width="120"
+            Content="Nastavi" FontFamily="Showcard Gothic" FontSize="20" Click="SearchButton_Click" 
+         ></Button>
+
+
+        <CheckBox Grid.Row="1" Grid.Column="0" Name="MyCheckBox" HorizontalAlignment="Center" VerticalAlignment="Center"
+                  Content="Odaberi sve" FontFamily="Showcard Gothic" FontSize="18"/>
+
+
+        <CheckBox Grid.Row="3" Grid.Column="0" Name="MyCheckBox1" HorizontalAlignment="Center" VerticalAlignment="Center"
+                  Content="Klaun    +50 km" FontFamily="Showcard Gothic" FontSize="18"/>
+
+        <Rectangle x:Name="slikaklaun" Grid.Row="3" Grid.Column="0"  HorizontalAlignment="Left" Margin="40,0,10,0" VerticalAlignment="Center"
+                     Width="70" Height="70">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Assets/klaun.jpg" Stretch="Fill" >
+                </ImageBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <CheckBox Grid.Row="2" Grid.Column="0" Name="MyCheckBox4" HorizontalAlignment="Center" VerticalAlignment="Center"
+                  Content="Konfeti    +30 km" FontFamily="Showcard Gothic" FontSize="18"/>
+
+        <Rectangle x:Name="slikakonfeti" Grid.Row="2" Grid.Column="0"  HorizontalAlignment="Left" Margin="40,0,10,0" VerticalAlignment="Center"
+                     Width="70" Height="70">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Assets/konfeti.jpeg" Stretch="Fill" >
+                </ImageBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <CheckBox Grid.Row="4" Grid.Column="0" Name="MyCheckBox2" HorizontalAlignment="Center" VerticalAlignment="Center"
+                  Content="Torta    +50 km" FontFamily="Showcard Gothic" FontSize="18"/>
+
+        <Rectangle x:Name="slikatorte" Grid.Row="4" Grid.Column="0"  HorizontalAlignment="Left" Margin="40,0,10,0" VerticalAlignment="Center"
+                     Width="70" Height="70">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Assets/torta.jpg" Stretch="Fill" >
+                </ImageBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <CheckBox Grid.Row="5" Grid.Column="0" Name="MyCheckBox3" HorizontalAlignment="Center" VerticalAlignment="Center"
+                  Content="Vatromet    +70 km" FontFamily="Showcard Gothic" FontSize="18"/>
+
+
+        <Rectangle x:Name="slikavatrometa" Grid.Row="5" Grid.Column="0"  HorizontalAlignment="Left" Margin="40,0,10,0" VerticalAlignment="Center"
+                     Width="70" Height="70">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Assets/vatromet.jpg" Stretch="Fill" >
+                </ImageBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+    </Grid>
+</Page>

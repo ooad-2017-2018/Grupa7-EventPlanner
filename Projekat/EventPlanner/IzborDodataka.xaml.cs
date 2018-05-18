@@ -20,18 +20,18 @@ namespace EventPlanner
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Igraonica : Page
+    public sealed partial class IzborDodataka : Page
     {
-        public static Igraonica igraonica;
-        public Igraonica()
+        public static IzborDodataka izbor;
+        public IzborDodataka()
         {
             this.InitializeComponent();
-            igraonica = this;
+            izbor = this;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void SearchButton_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(IzborDodataka));
+            this.Frame.Navigate(typeof(Racun));
         }
     }
 }
