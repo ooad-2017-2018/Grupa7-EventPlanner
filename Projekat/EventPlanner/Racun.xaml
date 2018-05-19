@@ -6,7 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-    <Grid Background="AntiqueWhite">
+    <Grid Background="FloralWhite">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
@@ -19,22 +19,22 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         <TextBlock Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"
-                   Margin="5"  Text="racun" FontSize="30" FontFamily="Showcard Gothic"/>
+                   Margin="5"  Text="racun" FontSize="50" FontFamily="Showcard Gothic" Foreground="#FF838D84"/>
         <Button Grid.Row="4" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"
                 Margin="10" Name="Zatvori" Width="245"
-            Content="Potvrdi rezervaciju" FontFamily="Showcard Gothic" FontSize="20" Click="Zatvori_Click" 
+            Content="Potvrdi rezervaciju" FontFamily="Showcard Gothic" FontSize="20" Click="Zatvori_Click" Background="#FF78E081" Foreground="#FFF2F9A8" BorderBrush="#FF838D84" 
          ></Button>
         <TextBlock Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"
-                   Margin="5"  Text="cijena rezervacije:" FontSize="18" FontFamily="Showcard Gothic"/>
+                   Margin="5"  Text="cijena rezervacije:" FontSize="30" FontFamily="Showcard Gothic" Foreground="#FF78E081" SelectionChanged="TextBlock_SelectionChanged_2"/>
         <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"
-                   Margin="5"  Text="              +120 km" FontSize="22" FontFamily="Showcard Gothic"/>
+                   Margin="5"  Text="              +120 km" FontSize="30" FontFamily="Showcard Gothic" Foreground="#FF78E081" SelectionChanged="TextBlock_SelectionChanged_5"/>
         <TextBlock Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"
-                   Margin="5"  Text="cijena dodataka:" FontSize="18" FontFamily="Showcard Gothic"/>
+                   Margin="5"  Text="cijena dodataka:" FontSize="30" FontFamily="Showcard Gothic" Foreground="#FF78E081" SelectionChanged="TextBlock_SelectionChanged_1"/>
         <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"
-                   Margin="6"  Text="               +80 km" FontSize="22" FontFamily="Showcard Gothic"/>
+                   Margin="6"  Text="               +80 km" FontSize="30" FontFamily="Showcard Gothic" Foreground="#FF78E081" SelectionChanged="TextBlock_SelectionChanged_4"/>
         <TextBlock Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"
-                   Margin="5"  Text="Ukupno:" FontSize="22" FontFamily="Showcard Gothic"/>
+                   Margin="5"  Text="Ukupno:" FontSize="36" FontFamily="Showcard Gothic" Foreground="#FF78E081" SelectionChanged="TextBlock_SelectionChanged"/>
         <TextBlock Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"
-                   Margin="5"  Text="               200 km" FontSize="22" FontFamily="Showcard Gothic"/>
+                   Margin="5"  Text="               200 km" FontSize="30" FontFamily="Showcard Gothic" Foreground="#FF78E081" SelectionChanged="TextBlock_SelectionChanged_3"/>
     </Grid>
 </Page>

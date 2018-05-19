@@ -11,23 +11,27 @@
 
         <Grid HorizontalAlignment="Left" Height="Auto" Margin="28,35,0,0" VerticalAlignment="Top" Width="Auto"/>
         <Button x:Name="dugmePrijaviSe" Content="vjencanje" HorizontalAlignment="Center" VerticalAlignment="Center" Width="240"
-                Grid.Row="3" FontSize="30" Height="50"
+                Grid.Row="5" FontSize="30" Height="50"
                 Grid.ColumnSpan="2" FontFamily="Showcard Gothic" Click="dugmePrijaviSe_Click" Background="#3329E8DF" Foreground="#FF0E16C7"/>
         <Button x:Name="dugmeazuriraj" Content="rodjendan" HorizontalAlignment="Center" VerticalAlignment="Center" Width="275"
-                Grid.Row="1" FontSize="30" Height="50"
+                Grid.Row="3" FontSize="30" Height="50"
                 Grid.ColumnSpan="2" FontFamily="Showcard Gothic" Click="dugmeazuriraj_Click" Background="#331FD3AA" Foreground="#FF991286"/>
         <Button x:Name="dugmeizlaz" Content="izlaz " HorizontalAlignment="Center" VerticalAlignment="Center" Width="230"
-                Grid.Row="4" FontSize="30" Height="50"
+                Grid.Row="6" FontSize="30" Height="50"
                 Grid.ColumnSpan="2"  FontFamily="Showcard Gothic" Click="dugmeizlaz_Click" Background="#33000000" Foreground="#FFFBF8F8"/>
         <Button x:Name="dugmeobrisi" Content="djevojacko vece " HorizontalAlignment="Center" VerticalAlignment="Center" Width="280"
-                Grid.Row="2" FontSize="30" Height="50"
+                Grid.Row="4" FontSize="30" Height="50"
                 Grid.ColumnSpan="2" FontFamily="Showcard Gothic" Click="dugmeobrisi_Click" Background="#33C407CD" Foreground="#FFE01140"/>
         <Button x:Name="dugme" Content="momacko vece " HorizontalAlignment="Center" VerticalAlignment="Center" Width="260"
-                Grid.Row="0" FontSize="30" Height="50"
+                Grid.Row="2" FontSize="30" Height="50"
                 Grid.ColumnSpan="2" FontFamily="Showcard Gothic" Click="dugme_Click" Background="#333F10BF" Foreground="#FF10A7AE"/>
+        <TextBlock x:Name="labelaDatum" HorizontalAlignment="Center" Height="29" Margin="-146,20,-156,-49" Text="Izaberite datum dogadjaja:" TextWrapping="Wrap" VerticalAlignment="Top" Width="302" FontFamily="Showcard Gothic" Foreground="#FF241CCD" FontSize="20" Grid.ColumnSpan="2" Grid.RowSpan="7"/>
+        <DatePicker Grid.Column="1" HorizontalAlignment="Left" Height="40" Margin="-144,61,-152,-101" VerticalAlignment="Top" Width="50" Grid.RowSpan="7" Foreground="#FF241CCD"/>
+        <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Center" Height="29" Margin="-127,40,-133,-69" Grid.Row="1" Text="Izaberite dogadjaj:" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" Foreground="#FF241CCD" FontSize="24" FontFamily="Showcard Gothic" Grid.RowSpan="6"/>
 
         <Grid.RowDefinitions>
-
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
@@ -52,7 +56,7 @@
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
 
-                   
+
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState x:Name="Desktop">
@@ -60,7 +64,7 @@
                         <AdaptiveTrigger MinWindowWidth="1000"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                       
+
                     </VisualState.Setters>
                 </VisualState>
             </VisualStateGroup>

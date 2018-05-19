@@ -6,23 +6,23 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-    <Grid x:Name="grid1" Background="AntiqueWhite">
+    <Grid x:Name="grid1" Background="FloralWhite">
 
         <Grid HorizontalAlignment="Left" Height="Auto" Margin="28,35,0,0" VerticalAlignment="Top" Width="Auto"/>
         <Button x:Name="dugmePrijaviSe" Content="dodaj rezervaciju" HorizontalAlignment="Center" VerticalAlignment="Center" Width="270"
                 Grid.Row="3" FontSize="25" Height="50"
-                Grid.ColumnSpan="2" FontFamily="Showcard Gothic" Click="dugmePrijaviSe_Click_1"/>
+                Grid.ColumnSpan="2" FontFamily="Showcard Gothic" Click="dugmePrijaviSe_Click_1" Foreground="#FF1294A8" Background="#33E446DD"/>
         <Button x:Name="dugmeazuriraj" Content="Azuriraj profil" HorizontalAlignment="Center" VerticalAlignment="Center" Width="275"
                 Grid.Row="1" FontSize="25" Height="50"
-                Grid.ColumnSpan="2" Click="dugmePrijaviSe_Click" FontFamily="Showcard Gothic"/>
+                Grid.ColumnSpan="2" Click="dugmePrijaviSe_Click" FontFamily="Showcard Gothic" Background="#33E446DD" Foreground="#FF1294A8"/>
         <Button x:Name="dugmeizlaz" Content="izlaz " HorizontalAlignment="Center" VerticalAlignment="Center" Width="230"
                 Grid.Row="4" FontSize="30" Height="50"
-                Grid.ColumnSpan="2" FontFamily="Showcard Gothic" Click="dugmeizlaz_Click"/>
+                Grid.ColumnSpan="2" FontFamily="Showcard Gothic" Click="dugmeizlaz_Click" Foreground="#FF78E081" Background="#33E446DD"/>
         <Button x:Name="dugmeobrisi" Content="obrisi rezervaciju" HorizontalAlignment="Center" VerticalAlignment="Center" Width="290"
                 Grid.Row="2" FontSize="25" Height="50"
-                Grid.ColumnSpan="2"  FontFamily="Showcard Gothic" Click="dugmeobrisi_Click"/>
+                Grid.ColumnSpan="2"  FontFamily="Showcard Gothic" Click="dugmeobrisi_Click" Foreground="#FF1294A8" Background="#33E446DD"/>
         <TextBlock x:Name="textBloc" HorizontalAlignment="Center" Margin="15,15,30,15" TextWrapping="Wrap" VerticalAlignment="Center"
-                   Grid.Row="0" Grid.Column="0" FontSize="25" Text="izbornik " FontFamily="Showcard Gothic"
+                   Grid.Row="0" Grid.Column="0" FontSize="25" Text="izbornik " FontFamily="Showcard Gothic" Foreground="#FF78E081"
                   />
         <Grid.RowDefinitions>
 

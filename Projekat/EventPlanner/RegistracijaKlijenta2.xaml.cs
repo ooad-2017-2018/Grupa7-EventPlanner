@@ -126,7 +126,7 @@ namespace EventPlanner
                 obj.brojKartice = textBoxBrojKartice.Text;
                 obj.IDKlijenta = obj.IDKlijenta;
                 userTableObj.InsertAsync(obj);
-                MessageDialog msgDialog = new MessageDialog("Uspješno ste unijeli novog klijenta");
+                MessageDialog msgDialog = new MessageDialog("Uspješno ste se registrovali na EventPlanner! Želimo Vam ugodno korištenje naših usluga.");
                 msgDialog.ShowAsync();
                 this.Frame.Navigate(typeof(IzbornikKorisnika));
             }

@@ -22,7 +22,7 @@
             <ColumnDefinition Width="2*" />
         </Grid.ColumnDefinitions>
 
-        <Rectangle x:Name="slika1" Width="120" Height="150" Grid.Row="1" Grid.Column="0">
+        <Rectangle x:Name="slika1" Width="120" Height="150" Grid.Row="1" Grid.Column="0" Visibility="Visible">
             <Rectangle.Fill>
                 <ImageBrush ImageSource="/Assets/igraonicaKvaKva.jpg" Stretch="Fill" >
                 </ImageBrush>

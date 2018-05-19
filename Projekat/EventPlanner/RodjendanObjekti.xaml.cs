@@ -31,6 +31,7 @@ namespace EventPlanner
 
         private void buttonVise1_Click(object sender, RoutedEventArgs e)
         {
+
             this.Frame.Navigate(typeof(Igraonica));
         }
     }
