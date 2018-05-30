@@ -1,0 +1,61 @@
+# OBSERVER 
+
+Uloga Observer paterna je da uspostavi relaciju između objekata tako kada jedan objekat 
+promijeni stanje, drugi zainteresirani objekti se obavještavaju..
+
+U sklopu EventPlannera Observer patern bi mogli iskoristiti kada klijent pristupa sistemu, 
+a ostalo je 5 ili manje dana do nekog dogadjaja koji je prethodno rezervisao.
+Tako bi on dobio notifikaciju da se blizi njegov event i koliko tacno dana je ostalo do njega.
+
+# STRATEGY
+
+Uloga: Strategy patern izdvaja algoritam iz matične klase i uključuje ga u posebne klase.
+Pogodan je kada postoje različiti primjenjivi algoritmi (strategije) za neki problem.
+Strategy patern omogućava klijentu izbor jednog od algoritma iz familije algoritama za korištenje.
+
+U nasem projektu Strategy patern je upotrebljen prilikom odabira vrste eventa, jer 
+za razlicite vrste eventa se ukljucuju razliciti filteri, tj. razliciti objekti i 
+usluge odgovaraju razlicitim vrstama dogadjaja te se pretrage medjusobno razlikuju.
+
+# DECORATOR
+
+Osnovna namjena Decorator paterna je da omogući dinamičko dodavanje novih elemenata i ponašanja (funkcionalnosti) postojećim
+objektima. Objekat pri tome ne zna da je urađena dekoracija što je veoma korisno za iskoristljivost i ponovnu upotrebu 
+komponenti softverskog sistema.
+
+U nasem projektu Decorator patern bi se mogao upotrijebiti za dodavanje novih mogucnosti pri rezervacijama. 
+Naprimjer, mogli bi dodati nove vrste dogadjaja kao sto su seminari, poslovne vecere i sl. ili cak nove vrste 
+ponuda kao sto su frizerske, make-up i slicne usluge. 
+
+# SINGLETON PATTERN(kreacijski pattern)
+
+Osigurava da se klasa instancira samo jednom i globalan pristup kreiranoj instanci tj 
+korištenje kao jedinstven objekat.
+Primjeri takvih klasa su thread pools (skupina niti), objekti koji upravljaju 
+setovanjem registara, objekti koji se koriste za logiranje, objekti koji se koriste 
+kao drajveri za razne uređaje kao što su printeri i grafičke
+kartice. Singleton klasa neke klase se pravi tako što se doda privatan atribut Singleton
+i nešto što vraća tu instancu. Sadrži jedan privatan konstruktor bez parametara što omogućava
+jedinstvenost. 
+Pattern bi se iskoristio kod klase za rad sa bazom jer nam je potrebna samo jedna klasa u čitavom projektu.
+
+# FACTORY METHOD(kreacijski pattern)
+
+Ovdje podklase odlučuju koju klasu instancirati.
+Različite podklase implementiraju interfejs na različit način.
+Zavisno od parametara različito je i upravljanje.
+Vrši se instantacija izvedene klase preko posebne metode FactoryMethod() na osnovu podataka korisnika.
+Ona definira interfejs za kreiranje objekata ali ostavlja izbor tip njegovim izvedenim klasama.
+U projektu je to iskorišteno na neki način kod pretrage npr i odlučivanja kojoj klasi pripada osoba tj da li je to Saradnik,
+Korisnik ili Admin.
+
+
+# PROTOTYPE PATTERN(kreacijski pattern)
+
+Kod ovog patterna novi objekat se formira klonirajući neki od postojećih prototip instanci.
+Ako je kreiranje novog objekta previše resursno zahtjevno vrši se kloniranje nekog koji već postoji.
+Ovako se formiraju objekti koji se naknadno prilagode bez poznavanja detalja o tome kako je prvobitni
+objekat formiran.
+Načini na koji se pattern može primjeniti je površinski i dubinski.
+Iskoristivost bi bila npr kod dobavljanja podataka iz baze najlakše bi bilo podatke 
+klonirati a ne stalno im pristupati.
