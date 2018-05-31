@@ -1,4 +1,4 @@
-# OBSERVER 
+﻿# OBSERVER 
 
 Uloga Observer paterna je da uspostavi relaciju između objekata tako kada jedan objekat 
 promijeni stanje, drugi zainteresirani objekti se obavještavaju..
@@ -59,3 +59,33 @@ objekat formiran.
 Načini na koji se pattern može primjeniti je površinski i dubinski.
 Iskoristivost bi bila npr kod dobavljanja podataka iz baze najlakše bi bilo podatke 
 klonirati a ne stalno im pristupati.
+
+
+# ABSTRACT FACTORY PATTERN
+Ovaj pattern omogućava da se kreiraju familije povezanih objekata. Na
+osnovu apstraktne familije produkata kreiraju se konkretne fabrike produkata
+različitih tipova i različitih kombinacija. Patern odvaja definiciju (klase) produkata od
+klijenta. Zbog toga se familije produkata mogu jednostavno izmjenjivati ili ažurirati bez
+narušavanja strukture klijenta.
+
+Iskoristivost ovog patterna u našem projektu se vidi u tome da imamo familije događaja - 
+različite vrste događaja - koji objedinjuju konkretne fabrike produkata - tj. konkretne objekte
+koji nude usluge za datu familiju događaja. Npr. za familiju rođendani se kreiraju konkretni
+objekti koji nude usluge organizacije rođendana.
+
+# ITERATOR
+
+Omogućava pristup elementima kolekcije sekvencijalno bez poznavanja interne strukture kolekcije.
+
+Iskoristivost bi bila kad klijent pristupa listi generisanih objekata za datu vrstu eventa.
+On ne poznaje internu strukturu kolekcije, ali ona odgovara njegovim zahtjevima za datu kolekciju.
+
+# COMMAND
+
+Ovaj pattern razdvaja klijenta koji zahtjeva operaciju i omogućava slanje zahtjeva
+različitim primateljima.
+
+Njegova primjena bi mogla biti prilikom otkazivanja rezervacije. Klijent šalje 
+zahtjev za otkazivanje, a sistem obavještava dati objekat o otkazivanju, sistem 
+za autorizaciju kartica ukoliko postoji mogućnost povratka novca, te aplikaciju
+gdje se dati objekt označava kao slobodan u datom terminu.
